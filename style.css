@@ -178,7 +178,7 @@ header {
   margin-bottom: 15px;
 }
 .date-title {
-  width: 400px;
+  width: 130px;
   color: #3525af;
 }
 .divider {
@@ -206,4 +206,12 @@ header {
 .exp-profession,
 .education-text {
   color: #3525af;
+}
+.info {
+  width: calc(100% - 130px - 12px);
+}
+.university {
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 8px;
 }
