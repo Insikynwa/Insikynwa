@@ -72,7 +72,8 @@ body {
 }
 
 .contact-title,
-.skills-title {
+.skills-title,
+.hobbies-title {
   display: flex;
   width: 100%;
   justify-content: flex-end;
@@ -80,11 +81,13 @@ body {
   color: #3525af;
   position: relative;
   font-size: 24px;
+  margin-top: 10px;
   font-weight: 700;
 }
 
 .contact-title:before,
-.skills-title:before {
+.skills-title:before,
+.hobbies-title:before {
   content: "";
   position: absolute;
   top: 35px;
@@ -94,13 +97,15 @@ body {
   background: #3525af;
 }
 
-.skills {
+.skills,
+.hobbies {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 40px;
 }
-.skill-wrapper {
+.skill-wrapper,
+.hobbie-wrapper {
   display: flex;
   flex-direction: column;
   width: 100px;
@@ -114,7 +119,8 @@ body {
 .skill-wrapper:hover {
   background: rgb(148, 22, 22);
 }
-.skill-text {
+.skill-text,
+.hobbie-text {
   text-align: center;
 }
 
@@ -124,16 +130,18 @@ header {
   background: #292b2f;
   color: white;
 }
-/* .name {
-    font-size: 52px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #3525af;
-  } */
-/* .profession {
-    font-weight: 300;
-    font-size: 20px;
-  } */
+.name {
+  font-size: 52px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #3525af;
+}
+.profession {
+  font-weight: 300;
+  font-size: 20px;
+  color: rgb(80, 127, 168);
+  margin-bottom: 10px;
+}
 .about-me {
   margin-top: 20px;
   line-height: 26px;
@@ -158,19 +166,20 @@ header {
   background: #3525af;
 }
 .group {
-  padding: 30px;
+  padding: 25px;
 }
 .experience,
 .education {
   margin-top: 40px;
 }
-.exp-wrapper {
-    
+.exp-wrapper,
+.ed-wrapper {
   display: flex;
   margin-bottom: 15px;
 }
 .date-title {
-  width: 230px;
+  width: 400px;
+  color: #3525af;
 }
 .divider {
   display: flex;
@@ -193,4 +202,8 @@ header {
 .skill-icon {
   color: rgb(255, 147, 47);
   font-size: 20px;
+}
+.exp-profession,
+.education-text {
+  color: #3525af;
 }
