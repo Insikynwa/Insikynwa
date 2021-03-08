@@ -9,14 +9,10 @@ body {
   line-height: 1;
   background-color: #6495ed;
   width: 100%;
-
-  /* height: calc(
-      100vh - 40px
-    ); рассчитывает высоту чтобы изабвиться от скролла */
-  margin: 20px 0px;
+  margin: 20px 0 0;
   display: flex;
   flex-direction: column;
-  align-items: center; /* для клонок по горизонтали */
+  align-items: center;
 }
 .wrapper {
   height: 100%;
@@ -26,7 +22,7 @@ body {
 }
 
 .left-column {
-  width: 250px;
+  width: 280px;
   background: #292b2f;
   display: flex;
   flex-direction: column;
@@ -147,16 +143,21 @@ header {
   line-height: 26px;
 }
 .experience-title,
-.education-title {
+.education-title,
+.english-title {
   display: flex;
   width: 100%;
   justify-content: flex-end;
   letter-spacing: 4px;
   color: #3525af;
   position: relative;
+  font-size: 24px;
+  margin-top: 10px;
+  font-weight: 700;
 }
 .experience-title:before,
-.education-title:before {
+.education-title:before,
+.english-title::before {
   content: "";
   position: absolute;
   top: 35px;
@@ -175,7 +176,14 @@ header {
 .exp-wrapper,
 .ed-wrapper {
   display: flex;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+}
+.exp-profession {
+  color: #3525af;
+}
+.company,
+.company-inform {
+  margin-top: 5px;
 }
 .date-title {
   width: 130px;
@@ -203,9 +211,10 @@ header {
   color: rgb(255, 147, 47);
   font-size: 20px;
 }
-.exp-profession,
+
 .education-text {
   color: #3525af;
+  margin-top: 8px;
 }
 .info {
   width: calc(100% - 130px - 12px);
@@ -214,4 +223,29 @@ header {
   font-weight: 300;
   font-size: 14px;
   margin-top: 8px;
+}
+.english-wrapper {
+  display: flex;
+  margin-bottom: 15px;
+  flex-direction: column;
+  align-items: center;
+}
+.english-text {
+  margin-top: 20px;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #086e44;
+  color: #fdfdfd;
+  width: 800px;
+  height: 100px;
+  padding: 15gipx;
+}
+
+.github-logo {
+  width: 40px;
 }
