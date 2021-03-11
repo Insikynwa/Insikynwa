@@ -198,3 +198,50 @@ header {
     font-family: Roboto;
     color: #f7f7f7;
 }
+.footer-wrapper {
+    background-image: url(assets/footer.jpg);
+    height: 360px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 120px;
+}
+.additional-inforation {
+    display: flex;
+    font-size: 23px;
+    line-height: 60px;
+    color: #f7f7f7;
+}
+.additional-article {
+    margin-right: 86px;
+}
+.additional-about-us {
+    margin-right: 85px;
+}
+.social-wrapper {
+    display: flex;
+}
+.facebook {
+    background-image: url(assets/facebook.svg);
+    height: 40px;
+    width: 40px;
+    margin-right: 27px;
+}
+.instagram {
+    background-image: url(assets/instagram.svg);
+    height: 40px;
+    width: 40px;
+    margin-right: 26px;
+}
+.pinterest {
+    background-image: url(assets/pinterest.svg);
+    height: 40px;
+    width: 40px;
+    margin-right: 27px;
+}
+.telegram {
+    background-image: url(assets/telegram.svg);
+    height: 40px;
+    width: 40px;
+}
