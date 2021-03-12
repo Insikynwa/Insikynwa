@@ -20,6 +20,7 @@ button {
     height: 780px;
     background-image: url(assets/fox.jpg);
     background-size: cover;
+    background-color: #02160b;
 }
 
 header {
