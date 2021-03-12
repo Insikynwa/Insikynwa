@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Ubntu", sans-serif;
+}
+body {
+  line-height: 1;
+  background-color: #6495ed;
+  width: 100%;
+  margin: 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper {
+  height: 100%;
+  width: 800px;
+  display: flex;
+  background: white;
+}
+
+.left-column {
+  width: 280px;
+  background: #292b2f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+.right-column {
+  width: calc(100% - 250px);
+}
+.photo-wrapper {
+  width: 200px;
+  padding: 20px 0;
+}
+.photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+.contact-wrapper,
+.skills-wrapper {
+  width: 100%;
+}
+.li-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* в данном случае отвечает за выравнивание строки по горизонтали  */
+  margin-right: 15px;
+  border-radius: 15px;
+  background: white;
+  color: rgb(255, 147, 47);
+  font-size: 20px;
+}
+
+.contact-text {
+  color: white;
+}
+
+.contact-title,
+.skills-title,
+.hobbies-title {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  letter-spacing: 4px;
+  color: #3525af;
+  position: relative;
+  font-size: 24px;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.contact-title:before,
+.skills-title:before,
+.hobbies-title:before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  right: 0;
+  width: 50px;
+  height: 3px;
+  background: #3525af;
+}
+
+.skills,
+.hobbies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.skill-wrapper,
+.hobbie-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+.skill-wrapper:hover {
+  background: rgb(148, 22, 22);
+}
+.skill-text,
+.hobbie-text {
+  text-align: center;
+}
+
+header {
+  height: 200px;
+  padding: 15px 30px;
+  background: #292b2f;
+  color: white;
+}
+.name {
+  font-size: 52px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #3525af;
+}
+.profession {
+  font-weight: 300;
+  font-size: 20px;
+  color: rgb(80, 127, 168);
+  margin-bottom: 10px;
+}
+.about-me {
+  margin-top: 20px;
+  line-height: 26px;
+}
+.experience-title,
+.education-title,
+.english-title {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  letter-spacing: 4px;
+  color: #3525af;
+  position: relative;
+  font-size: 24px;
+  margin-top: 10px;
+  font-weight: 700;
+}
+.experience-title:before,
+.education-title:before,
+.english-title::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  right: 0;
+  width: 50px;
+  height: 3px;
+  background: #3525af;
+}
+.group {
+  padding: 25px;
+}
+.experience,
+.education {
+  margin-top: 40px;
+}
+.exp-wrapper,
+.ed-wrapper {
+  display: flex;
+  margin-bottom: 30px;
+}
+.exp-profession {
+  color: #3525af;
+}
+.company,
+.company-inform {
+  margin-top: 5px;
+}
+.date-title {
+  width: 130px;
+  color: #3525af;
+}
+.divider {
+  display: flex;
+  flex-direction: column;
+  width: 10px;
+  align-items: center;
+  margin: 0 8px;
+}
+.divider-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #3525af;
+}
+.divider-line {
+  width: 2px;
+  height: 100%;
+  background: #3525af;
+}
+.skill-icon {
+  color: rgb(255, 147, 47);
+  font-size: 20px;
+}
+
+.education-text {
+  color: #3525af;
+  margin-top: 8px;
+}
+.info {
+  width: calc(100% - 130px - 12px);
+}
+.university {
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 8px;
+}
+.english-wrapper {
+  display: flex;
+  margin-bottom: 15px;
+  flex-direction: column;
+  align-items: center;
+}
+.english-text {
+  margin-top: 20px;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #086e44;
+  color: #fdfdfd;
+  width: 800px;
+  height: 100px;
+  padding: 15gipx;
+}
+
+.github-logo {
+  width: 40px;
+}
