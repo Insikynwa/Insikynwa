@@ -52,9 +52,18 @@ header {
     color: #f7f7f7;
     margin-left: 60px;
 }
+.nav-item-wrapper:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .nav-search {
     margin-left: 60px;
 }
+.nav-search {
+    cursor: pointer;
+}
+
 .nav-sign {
     width: 120px;
     height: 50px;
@@ -66,26 +75,40 @@ header {
     justify-content: center;
     margin-left: 61px;
 }
+.nav-sign:hover {
+    background: #cd6326;
+    cursor: pointer;
+    border: 2px solid #cd6326;
+}
+.nav-sign:active {
+    background: #8f5613;
+    cursor: pointer;
+    text-decoration: underline;
+    border-color: #8f5613;
+}
 .nav-sign-text {
     font-family: Roboto;
     font-size: 23px;
     line-height: 27px;
 }
+
 .survival-wrapper {
     margin: 120px 0 0 120px;
 }
+
 .survival-title {
     font-size: 48px;
     line-height: 72px;
     letter-spacing: 2px;
     color: #cd6326;
 }
+
 .survival-description {
     width: 274px;
     font-size: 18px;
     line-height: 27px;
     color: #f7f7f7;
-    margin-top: 51px;
+    padding-top: 51px;
 }
 .donate-button {
     width: 160px;
@@ -100,6 +123,19 @@ header {
     line-height: 27px;
     color: #f7f7f7;
     margin-top: 49px;
+}
+
+.donate-button:hover {
+    background: #e39128;
+    cursor: pointer;
+    border-color: #e39128;
+}
+
+.donate-button:active {
+    background: #8f5613;
+    cursor: pointer;
+    text-decoration: underline;
+    border-color: #8f5613;
 }
 
 .main-content-wrapper {
@@ -134,6 +170,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.slider-arrow:hover {
+    cursor: pointer;
 }
 
 .slider-item-wrapper {
@@ -199,6 +238,18 @@ header {
     font-family: Roboto;
     color: #f7f7f7;
 }
+.notified-button:hover {
+    background: #e39128;
+    cursor: pointer;
+    border-color: #e39128;
+}
+.notified-button:active {
+    background: #8f5613;
+    cursor: pointer;
+    text-decoration: underline;
+    border-color: #8f5613;
+}
+
 .footer-wrapper {
     background-image: url(assets/footer.jpg);
     height: 360px;
@@ -208,18 +259,43 @@ header {
     justify-content: space-between;
     padding: 0 120px;
 }
+.footer-title {
+    font-size: 32px;
+    width: 155px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #f7f7f7;
+    margin-left: 15px;
+}
+
 .additional-inforation {
     display: flex;
     font-size: 23px;
     line-height: 60px;
     color: #f7f7f7;
 }
+
 .additional-article {
     margin-right: 86px;
 }
+.additional-article:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .additional-about-us {
     margin-right: 85px;
 }
+.additional-about-us:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.additional-learn-more:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .social-wrapper {
     display: flex;
 }
@@ -229,11 +305,17 @@ header {
     width: 40px;
     margin-right: 27px;
 }
+.facebook:hover {
+    cursor: pointer;
+}
 .instagram {
     background-image: url(assets/instagram.svg);
     height: 40px;
     width: 40px;
     margin-right: 26px;
+}
+.instagram:hover {
+    cursor: pointer;
 }
 .pinterest {
     background-image: url(assets/pinterest.svg);
@@ -241,8 +323,14 @@ header {
     width: 40px;
     margin-right: 27px;
 }
+.pinterest:hover {
+    cursor: pointer;
+}
 .telegram {
     background-image: url(assets/telegram.svg);
     height: 40px;
     width: 40px;
+}
+.telegram:hover {
+    cursor: pointer;
 }
