@@ -87,7 +87,6 @@ header {
 .nav-sign:active {
     background: #8f5613;
     cursor: pointer;
-    text-decoration: underline;
     border-color: #8f5613;
 }
 .nav-sign-text {
