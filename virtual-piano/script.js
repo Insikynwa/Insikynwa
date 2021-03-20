@@ -1,5 +1,7 @@
 const piano = document.querySelector(".piano");
 const pianoKeys = document.querySelectorAll(".piano-key");
+const btnContainer = document.querySelector(".btn-container");
+const btnActive = document.querySelectorAll(".btn");
 
 const playAudio = (element) => {
     const audio = new Audio();
@@ -21,4 +23,14 @@ piano.addEventListener("mouseup", (event) => {
         event.target.classList.toggle("piano-key-active");
     }
 });
+
+btnContainer.addEventListener("click", (event) => {
+    if (!event.target.classList.contains("btn-active")) {
+        pianoKeys.forEach((element) =>
+            element.classList.toggle("piano-key-letter")
+        );
+        btnActive.forEach((element) => element.classList.toggle("btn-active"));
+    }
+});
+
 
