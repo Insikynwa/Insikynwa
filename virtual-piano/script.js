@@ -1,26 +1,54 @@
 const piano = document.querySelector(".piano");
+const main = document.querySelector(".main");
 const pianoKeys = document.querySelectorAll(".piano-key");
 const btnContainer = document.querySelector(".btn-container");
 const btnActive = document.querySelectorAll(".btn");
+let isPressed = false;
 
-const playAudio = (element) => {
+const playAudio = (note, event) => {
     const audio = new Audio();
-    audio.src = `assets/audio/${element}.mp3`;
+    audio.src = `assets/audio/${note}.mp3`;
     audio.currentTime = 0;
     audio.play();
+    if (event) {
+        switchActive(event.target);
+    } else {
+        const noteElement = document.getElementById(note);
+        switchActive(noteElement);
+    }
 };
 
+const switchActive = (element) => {
+    element.classList.toggle("piano-key-active");
+};
 piano.addEventListener("mousedown", (event) => {
     if (event.target.classList.contains("piano-key")) {
         const note = event.target.dataset.note;
-        playAudio(note);
-        event.target.classList.toggle("piano-key-active");
+        playAudio(note, event);
+
+        isPressed = true;
     }
 });
 
 piano.addEventListener("mouseup", (event) => {
-    if (event.target.classList.contains("piano-key")) {
-        event.target.classList.toggle("piano-key-active");
+    if (event.target.classList.contains("piano-key-active")) {
+        event.target.classList.remove("piano-key-active");
+        isPressed = false;
+    }
+});
+piano.addEventListener("mouseout", (event) => {
+    if (event.target.classList.contains("piano-key-active")) {
+        event.target.classList.remove("piano-key-active");
+    }
+});
+
+main.addEventListener("mouseup", () => {
+    isPressed = false;
+});
+piano.addEventListener("mouseover", (event) => {
+    if (event.target.classList.contains("piano-key") && isPressed) {
+        const note = event.target.dataset.note;
+        playAudio(note, event);
     }
 });
 
@@ -72,13 +100,18 @@ window.addEventListener("keydown", (event) => {
     }
 });
 
- 
-// const startFullScreen = document.querySelector(".openfullscreen");
-//    startFullScreen.addEventListener("mousedown", () => {
-//     if (document.documentElement.requestFullscreen) {
-//         document.documentElement.requestFullScreen();
-//     }
-//     if (document.exitFullscreen) {
-//         document.exitFullscreen();
-//     }
-// }); 
+window.addEventListener("keyup", () => {
+    pianoKeys.forEach((element) =>
+        element.classList.remove("piano-key-active")
+    );
+});
+
+const handleFullScreen = () => {
+    if (!document.fullscreenElement) {
+        document.body.webkitRequestFullScreen();
+    } else {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        }
+    }
+};

@@ -26,13 +26,48 @@
                 <button class="btn btn-letters">Letters</button>
             </div>
             <div class="piano">
-                <div class="piano-key" data-letter="D" data-note="c"></div>
-                <div class="piano-key" data-letter="F" data-note="d"></div>
-                <div class="piano-key" data-letter="G" data-note="e"></div>
-                <div class="piano-key" data-letter="H" data-note="f"></div>
-                <div class="piano-key" data-letter="J" data-note="g"></div>
-                <div class="piano-key" data-letter="K" data-note="a"></div>
-                <div class="piano-key" data-letter="L" data-note="b"></div>
+                <div
+                    id="c"
+                    class="piano-key"
+                    data-letter="D"
+                    data-note="c"
+                ></div>
+                <div
+                    id="d"
+                    class="piano-key"
+                    data-letter="F"
+                    data-note="d"
+                ></div>
+                <div
+                    id="e"
+                    class="piano-key"
+                    data-letter="G"
+                    data-note="e"
+                ></div>
+                <div
+                    id="f"
+                    class="piano-key"
+                    data-letter="H"
+                    data-note="f"
+                ></div>
+                <div
+                    id="g"
+                    class="piano-key"
+                    data-letter="J"
+                    data-note="g"
+                ></div>
+                <div
+                    id="a"
+                    class="piano-key"
+                    data-letter="K"
+                    data-note="a"
+                ></div>
+                <div
+                    id="b"
+                    class="piano-key"
+                    data-letter="L"
+                    data-note="b"
+                ></div>
                 <div class="keys-sharp">
                     <div
                         class="piano-key sharp"
@@ -62,7 +97,10 @@
                     ></div>
                 </div>
             </div>
-            <button class="fullscreen openfullscreen"></button>
+            <button
+                class="fullscreen openfullscreen"
+                onmousedown="handleFullScreen()"
+            ></button>
         </main>
         <footer class="footer">
             <div class="footer-container">
