@@ -42,9 +42,9 @@ piano.addEventListener("mouseout", (event) => {
     }
 });
 
-main.addEventListener("mouseup", () => {
+const handleIsNotPressed = () => {
     isPressed = false;
-});
+};
 piano.addEventListener("mouseover", (event) => {
     if (event.target.classList.contains("piano-key") && isPressed) {
         const note = event.target.dataset.note;
