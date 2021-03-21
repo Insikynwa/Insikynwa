@@ -1,7 +1,6 @@
 const piano = document.querySelector(".piano");
 const main = document.querySelector(".main");
 const pianoKeys = document.querySelectorAll(".piano-key");
-const btnContainer = document.querySelector(".btn-container");
 const btnActive = document.querySelectorAll(".btn");
 let isPressed = false;
 
@@ -11,14 +10,14 @@ const playAudio = (note, event) => {
     audio.currentTime = 0;
     audio.play();
     if (event) {
-        switchActive(event.target);
+        switchActiveState(event.target);
     } else {
         const noteElement = document.getElementById(note);
-        switchActive(noteElement);
+        switchActiveState(noteElement);
     }
 };
 
-const switchActive = (element) => {
+const switchActiveState = (element) => {
     element.classList.toggle("piano-key-active");
 };
 piano.addEventListener("mousedown", (event) => {
@@ -52,12 +51,12 @@ piano.addEventListener("mouseover", (event) => {
     }
 });
 
-btnContainer.addEventListener("click", () => {
+const switchLetterNotes = () => {
     pianoKeys.forEach((element) =>
         element.classList.toggle("piano-key-letter")
     );
     btnActive.forEach((element) => element.classList.toggle("btn-active"));
-});
+};
 
 window.addEventListener("keydown", (event) => {
     switch (event.code) {
