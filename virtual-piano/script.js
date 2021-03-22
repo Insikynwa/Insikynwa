@@ -10,21 +10,20 @@ const playAudio = (note, event) => {
     audio.currentTime = 0;
     audio.play();
     if (event) {
-        switchActiveState(event.target);
+        switchActiveStateKey(event.target);
     } else {
         const noteElement = document.getElementById(note);
-        switchActiveState(noteElement);
+        switchActiveStateKey(noteElement);
     }
 };
 
-const switchActiveState = (element) => {
+const switchActiveStateKey = (element) => {
     element.classList.toggle("piano-key-active");
 };
 piano.addEventListener("mousedown", (event) => {
     if (event.target.classList.contains("piano-key")) {
         const note = event.target.dataset.note;
         playAudio(note, event);
-
         isPressed = true;
     }
 });

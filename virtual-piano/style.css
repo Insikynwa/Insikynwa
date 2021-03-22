@@ -157,8 +157,9 @@ body {
 .piano-key-active:hover::after {
     color: #00b4a4;
 }
-.sharp:active {
-    border-top: 0;
+
+.sharp:hover {
+    background-color: #25292c;
 }
 
 .piano-key.sharp::before,
