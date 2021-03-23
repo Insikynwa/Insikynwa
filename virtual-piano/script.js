@@ -58,43 +58,45 @@ const switchLetterNotes = () => {
 };
 
 window.addEventListener("keydown", (event) => {
-    switch (event.code) {
-        case "KeyD":
-            playAudio("c");
-            break;
-        case "KeyF":
-            playAudio("d");
-            break;
-        case "KeyG":
-            playAudio("e");
-            break;
-        case "KeyH":
-            playAudio("f");
-            break;
-        case "KeyJ":
-            playAudio("g");
-            break;
-        case "KeyK":
-            playAudio("a");
-            break;
-        case "KeyL":
-            playAudio("b");
-            break;
-        case "KeyR":
-            playAudio("c♯");
-            break;
-        case "KeyT":
-            playAudio("d♯");
-            break;
-        case "KeyU":
-            playAudio("f♯");
-            break;
-        case "KeyI":
-            playAudio("g♯");
-            break;
-        case "KeyO":
-            playAudio("a♯");
-            break;
+    if (event.repeat === false) {
+        switch (event.code) {
+            case "KeyD":
+                playAudio("c");
+                break;
+            case "KeyF":
+                playAudio("d");
+                break;
+            case "KeyG":
+                playAudio("e");
+                break;
+            case "KeyH":
+                playAudio("f");
+                break;
+            case "KeyJ":
+                playAudio("g");
+                break;
+            case "KeyK":
+                playAudio("a");
+                break;
+            case "KeyL":
+                playAudio("b");
+                break;
+            case "KeyR":
+                playAudio("c♯");
+                break;
+            case "KeyT":
+                playAudio("d♯");
+                break;
+            case "KeyU":
+                playAudio("f♯");
+                break;
+            case "KeyI":
+                playAudio("g♯");
+                break;
+            case "KeyO":
+                playAudio("a♯");
+                break;
+        }
     }
 });
 
