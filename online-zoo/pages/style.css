@@ -22,6 +22,7 @@ button {
 body {
     width: 1920px;
     height: 100%;
+    background: #ffffff;
 }
 header {
     display: flex;
@@ -39,7 +40,6 @@ header {
 .header-wrapper {
     width: 100%;
     height: 94px;
-    background: #ffffff;
     box-shadow: 0px 4px 8px rgba(44, 101, 77, 0.08);
 }
 .header-logo {
@@ -140,4 +140,85 @@ input:checked + .slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+.favourite-animal-wrapper {
+    background-image: url(../assets/fa-bacground.png);
+    background-size: cover;
+    width: 100%;
+    height: 940px;
+}
+.fa-title {
+    width: 793px;
+    padding-top: 206px;
+    margin-left: 360px;
+    height: 208px;
+    font-weight: 900;
+    font-size: 89px;
+    line-height: 104px;
+    color: #fefefe;
+}
+.button-wrapper {
+    display: flex;
+    width: 245px;
+    height: 55px;
+    margin-top: 245px;
+    margin-left: 360px;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(106.89deg, #4bd8b5 -14.32%, #49d6df 100.68%);
+    border-radius: 3px;
+}
+.button-wrapper:hover {
+    cursor: pointer;
+    background: #2e878d;
+}
+.button-image {
+    width: 32px;
+    height: 32px;
+}
+.button-text {
+    width: 130px;
+    height: 21px;
+    font-weight: 900;
+    font-size: 18px;
+    margin-left: 5px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.fa-socials-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 20px;
+    height: 107px;
+    margin: 216px 0px 0px 152px;
+}
+.fa-social-link-instagram {
+    width: 20px;
+    height: 20px;
+    background-image: url(../assets/fa-instagram.svg);
+}
+.fa-social-link-twitter {
+    width: 20px;
+    height: 16.25px;
+    background-image: url(../assets/fa-twitter.svg);
+}
+.fa-social-link-youtube {
+    width: 20px;
+    height: 13.75px;
+    background-image: url(../assets/fa-youtube.svg);
+}
+.fa-social-link-vk {
+    width: 20px;
+    height: 11.41px;
+    background-image: url(../assets/fa-vk.svg);
+}
+
+.how-works-wrapper {
+    width: 100%;
+    max-height: 1296px;
 }
