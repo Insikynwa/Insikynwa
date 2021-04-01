@@ -323,3 +323,102 @@ input:checked + .slider:before {
     line-height: 16px;
     color: #4f4f4f;
 }
+.pets-in-zoo-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 854px;
+}
+.pets-in-zoo-title {
+    width: 790px;
+    height: 56px;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+}
+.pets-in-zoo-images {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin: 35px 0 30px;
+    padding: 0 310px;
+}
+.pets-in-zoo-images-wrapper {
+    position: relative;
+}
+
+.pets-in-zoo-image {
+    width: 278px;
+    height: 399px;
+}
+.pets-in-zoo-image:hover {
+    cursor: pointer;
+}
+.pets-in-zoo-donate-wrapper {
+    position: absolute;
+    top: 269px;
+    left: 22px;
+    width: 197px;
+}
+.pets-in-zoo-donate-title {
+    width: 194px;
+    height: 48px;
+    font-size: 14px;
+    line-height: 16.41px;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+}
+.pets-in-zoo-donate-buttons-wrapper {
+    display: flex;
+    height: 24px;
+    align-items: center;
+    margin-top: 14px;
+}
+.pets-in-zoo-watch-button {
+    width: 113px;
+    margin-right: 10px;
+    height: 24px;
+}
+.pets-in-zoo-watch-button:hover {
+    cursor: pointer;
+}
+.pets-in-zoo-donate-button {
+    width: 74px;
+    height: 24px;
+}
+.pets-in-zoo-donate-button:hover {
+    cursor: pointer;
+}
+.pets-in-zoo-arrow {
+    width: 30px;
+    height: 30px;
+}
+.pets-in-zoo-arrow:hover {
+    cursor: pointer;
+}
+.pets-in-zoo-slider {
+    background-image: url(../assets/piz-slider.svg);
+    width: 245px;
+    height: 49px;
+    margin-bottom: 30px;
+}
+.pets-in-zoo-button {
+    width: 245px;
+    height: 55px;
+    background: linear-gradient(106.89deg, #4bd8b5 -14.32%, #49d6df 100.68%);
+    border-radius: 3px;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.pets-in-zoo-button:hover {
+    cursor: pointer;
+    background: #2e878d;
+}
