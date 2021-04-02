@@ -422,3 +422,54 @@ input:checked + .slider:before {
     cursor: pointer;
     background: #2e878d;
 }
+.pay-and-feed-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    align-items: center;
+    height: 754px;
+    width: 100%;
+    background: #f2f2f2;
+}
+.pay-and-feed-title {
+    height: 56px;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+}
+.pay-and-feed-description {
+    width: 790px;
+    margin-top: 30px;
+    margin-bottom: 92px;
+    height: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #4f4f4f;
+}
+.pay-and-feed-cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 358px;
+    padding-right: 362px;
+    width: 100%;
+}
+.pay-and-feed-button {
+    width: 245px;
+    height: 55px;
+    margin-top: 60px;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: linear-gradient(106.89deg, #4bd8b5 -14.32%, #49d6df 100.68%);
+    border-radius: 3px;
+}
+.pay-and-feed-button:hover {
+    cursor: pointer;
+    background: #2e878d;
+}
