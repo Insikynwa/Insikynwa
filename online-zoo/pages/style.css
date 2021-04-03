@@ -30,6 +30,7 @@ header {
     align-items: center;
     height: 100%;
 }
+
 .h1-hidden {
     position: absolute;
     overflow: hidden;
@@ -277,7 +278,7 @@ input:checked + .slider:before {
     height: 352px;
 }
 .favourite-animal-slider {
-    background-image: url(../assets/fa-slider-light.svg);
+    background-image: url(../assets/slider-light-0208.svg);
     width: 245px;
     height: 49px;
     margin: 20px 0 0 calc(100% - 71.44%);
@@ -408,11 +409,9 @@ input:checked + .slider:before {
     margin: 35px 0 30px;
     padding: 0 310px;
 }
-.pets-in-zoo-image {
-    position: relative;
-}
 
 .pets-in-zoo-image {
+    position: relative;
     width: 278px;
     height: 399px;
 }
@@ -563,9 +562,55 @@ input:checked + .slider:before {
     height: 30px;
 }
 .testimonials-feedback-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
     width: 585px;
     height: 310px;
     background: #fefefe;
     box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.1);
     border-radius: 5px;
+}
+.testimonial-user-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 47px;
+    background-image: url(../assets/testimonial-elipse.svg);
+    width: 68px;
+    height: 68px;
+}
+.testimonial-user-image {
+    width: 48px;
+    height: 48px;
+}
+.testimonial-user-image.photo {
+    width: 68px;
+    height: 68px;
+}
+.tetimonials-card-title {
+    width: 148px;
+    height: 23px;
+    margin: 17px 0;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+}
+.testimonials-card-description {
+    width: 440px;
+    height: 32px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #4f4f4f;
+}
+.testimonials-buttons {
+    margin-top: 30px;
+}
+.testimonials-slider {
+    width: 245px;
+    height: 49px;
+    margin-bottom: 30px;
+    background-image: url(../assets/slider-dark-0208.svg);
 }
