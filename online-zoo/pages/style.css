@@ -46,7 +46,7 @@ header {
 .header-logo {
     width: 59px;
     height: 42px;
-    padding-left: 151px;
+    padding-left: calc(100% - 1769px);
 }
 .navigation-wrapper {
     display: flex;
@@ -144,6 +144,8 @@ input:checked + .slider:before {
 }
 
 .favourite-animal-wrapper {
+    position: relative;
+    overflow: hidden;
     background-image: url(../assets/fa-bacground.png);
     background-size: cover;
     width: 100%;
@@ -220,7 +222,66 @@ input:checked + .slider:before {
     height: 11.41px;
     background-image: url(../assets/fa-vk.svg);
 }
-
+.favourite-animal-slider-wrapper {
+    position: absolute;
+    width: 58.54%;
+    height: 421px;
+    bottom: 113px;
+    right: -44px;
+}
+.favourite-animal-slider-line-wrapper {
+    height: 13px;
+    width: 100%;
+    margin-left: -135px;
+    position: absolute;
+}
+.favourite-animal-slider-line {
+    height: 1px;
+    margin-left: 4.5px;
+    background: #fefefe;
+    width: 100%;
+}
+.favourite-animal-slider-line-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #fefefe;
+    border-radius: 50%;
+    bottom: 6px;
+    box-sizing: border-box;
+}
+.favourite-animal-slider-line-dot {
+    height: 5px;
+    width: 5px;
+    background: #fefefe;
+    border-radius: 50%;
+}
+.favourite-animal-slider-images-wrapper {
+    display: flex;
+    align-items: center;
+    height: 352px;
+    padding-left: 135px;
+}
+.favourite-animal-slider-image {
+    height: 203px;
+    width: 140px;
+    margin-right: 46px;
+    object-fit: cover;
+    z-index: 1;
+}
+.favourite-animal-slider-image.selected {
+    width: 245px;
+    height: 352px;
+}
+.favourite-animal-slider {
+    background-image: url(../assets/fa-slider-light.svg);
+    width: 245px;
+    height: 49px;
+    margin: 20px 0 0 calc(100% - 71.44%);
+}
 .how-works-wrapper {
     width: 100%;
     max-height: 1296px;
@@ -339,7 +400,7 @@ input:checked + .slider:before {
     line-height: 56px;
     text-align: center;
 }
-.pets-in-zoo-images {
+.pets-in-zoo-images-wrapper {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -347,7 +408,7 @@ input:checked + .slider:before {
     margin: 35px 0 30px;
     padding: 0 310px;
 }
-.pets-in-zoo-images-wrapper {
+.pets-in-zoo-image {
     position: relative;
 }
 
