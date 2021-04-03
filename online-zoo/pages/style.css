@@ -171,7 +171,7 @@ input:checked + .slider:before {
     background: linear-gradient(106.89deg, #4bd8b5 -14.32%, #49d6df 100.68%);
     border-radius: 3px;
 }
-.button-wrapper {
+.favourite-animal-button-wrapper {
     margin-top: 245px;
     margin-left: 360px;
 }
@@ -561,6 +561,10 @@ input:checked + .slider:before {
     width: 30px;
     height: 30px;
 }
+.testimonials-right-arrow:hover,
+.testimonials-left-arrow:hover {
+    cursor: pointer;
+}
 .testimonials-feedback-card {
     display: flex;
     flex-direction: column;
@@ -613,4 +617,45 @@ input:checked + .slider:before {
     height: 49px;
     margin-bottom: 30px;
     background-image: url(../assets/slider-dark-0208.svg);
+}
+.testimonials-slider:hover {
+    cursor: pointer;
+}
+
+/* Map section */
+
+.map-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 904px;
+    width: 100%;
+    padding-top: 100px;
+    background: #f2f2f2;
+}
+.map-title {
+    width: 790px;
+    height: 56px;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.map-block-wrapper {
+    background-image: url(../assets/map.svg);
+    width: 1200px;
+    height: 498px;
+    margin-bottom: 35px;
+}
+.map-dot-hawk {
+    background-image: url(../assets/map-hawk-turquoise.svg);
+    width: 93.36px;
+    height: 105px;
+    filter: drop-shadow(2px 4px 15px rgba(6, 12, 70, 0.15));
+    margin-left: 9.01%;
+    margin-top: 5.2%;
+}
+.map-dot-hawk:hover {
+    background-image: url(../assets/map-hawk-red.svg);
 }
