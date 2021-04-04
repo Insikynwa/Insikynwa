@@ -63,7 +63,7 @@ header {
     line-height: 19px;
     font-weight: 900;
 }
-.navigation-about {
+.navigation-about:hover {
     cursor: default;
 }
 .navigation-zoos {
@@ -83,7 +83,13 @@ header {
     font-size: 16px;
     line-height: 19px;
 }
-
+.navigation-zoos:hover,
+.navigation-map:hover,
+.navigation-contact-us:hover,
+.navigation-design:hover {
+    cursor: pointer;
+    border-bottom: 1px solid #333333;
+}
 /* style switch-button*/
 .switch-wrapper {
     position: relative;
