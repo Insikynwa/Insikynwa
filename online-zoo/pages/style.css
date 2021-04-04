@@ -297,6 +297,19 @@ input:checked + .slider:before {
     width: 245px;
     height: 352px;
 }
+.donate-wrapper {
+    position: absolute;
+    top: 269px;
+    left: 22px;
+    width: 197px;
+}
+.donate-title {
+    width: 194px;
+    font-size: 14px;
+    line-height: 16.41px;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+}
 .selected-image.donate-wrapper {
     left: 23px;
     top: 232px;
@@ -432,19 +445,33 @@ input:checked + .slider:before {
     position: relative;
     width: 278px;
     height: 399px;
+    overflow: hidden;
 }
 .pets-in-zoo-image:hover {
     cursor: pointer;
 }
-.donate-wrapper {
+.pets-in-zoo-image .donate-wrapper {
+    cursor: pointer;
     position: absolute;
-    top: 269px;
-    left: 22px;
-    width: 197px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(13, 27, 20, 0.8);
+    width: 100%;
+    height: 100%;
+    padding-top: 125px;
+    margin-bottom: 5px;
+    opacity: 0;
+    top: 100%;
+    left: 0;
+    transition: all 0.8s;
 }
-.donate-title {
+.pets-in-zoo-image:hover .donate-wrapper {
+    opacity: 0.8;
+    top: 0;
+}
+.pets-in-zoo-image .donate-title {
     width: 194px;
-    height: 48px;
     font-size: 14px;
     line-height: 16.41px;
     letter-spacing: 0.3px;
