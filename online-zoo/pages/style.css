@@ -203,6 +203,13 @@ input:checked + .slider:before {
     text-transform: uppercase;
     color: #ffffff;
 }
+
+.favourite-animal-slider-title {
+    background-image: url(../assets/slider-light-0208.svg);
+    width: 245px;
+    height: 49px;
+    margin: 20px 0 0 360px;
+}
 .favourite-animal-socials-wrapper {
     display: flex;
     flex-direction: column;
@@ -282,9 +289,18 @@ input:checked + .slider:before {
     object-fit: cover;
     z-index: 1;
 }
+.favourite-animal-slider-image:hover {
+    cursor: pointer;
+}
 .favourite-animal-slider-image.selected {
+    position: relative;
     width: 245px;
     height: 352px;
+}
+.selected-image.donate-wrapper {
+    left: 23px;
+    top: 232px;
+    z-index: 2;
 }
 .favourite-animal-slider {
     background-image: url(../assets/slider-light-0208.svg);
@@ -420,13 +436,13 @@ input:checked + .slider:before {
 .pets-in-zoo-image:hover {
     cursor: pointer;
 }
-.pets-in-zoo-donate-wrapper {
+.donate-wrapper {
     position: absolute;
     top: 269px;
     left: 22px;
     width: 197px;
 }
-.pets-in-zoo-donate-title {
+.donate-title {
     width: 194px;
     height: 48px;
     font-size: 14px;
@@ -434,25 +450,25 @@ input:checked + .slider:before {
     letter-spacing: 0.3px;
     color: #ffffff;
 }
-.pets-in-zoo-donate-buttons-wrapper {
+.donate-buttons-wrapper {
     display: flex;
     height: 24px;
     align-items: center;
     margin-top: 14px;
 }
-.pets-in-zoo-watch-button {
+.watch-button {
     width: 113px;
     margin-right: 10px;
     height: 24px;
 }
-.pets-in-zoo-watch-button:hover {
+.watch-button:hover {
     cursor: pointer;
 }
-.pets-in-zoo-donate-button {
+.donate-button {
     width: 74px;
     height: 24px;
 }
-.pets-in-zoo-donate-button:hover {
+.donate-button:hover {
     cursor: pointer;
 }
 .pets-in-zoo-arrow {
