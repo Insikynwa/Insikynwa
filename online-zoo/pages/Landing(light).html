@@ -14,10 +14,12 @@
     </head>
     <body>
         <h1 class="h1-hidden">Online zoo</h1>
+
+        <!-- Header section -->
         <section class="header-wrapper">
             <header>
                 <a class="header-logo" href="#">
-                    <img src="../assets/logo-light.svg" alt="logo" />
+                    <img src="../assets/logo-dark.svg" alt="logo" />
                 </a>
                 <div class="navigation-wrapper">
                     <a class="navigation-about" href="#">About</a>
@@ -36,9 +38,13 @@
                 </label>
             </header>
         </section>
+
+        <!-- Favoutite animal section -->
         <section class="favourite-animal-wrapper">
             <p class="fa-title">Watch your favorite animal online</p>
-            <button class="online-button favourite-animal-button-wrapper">
+            <button
+                class="online-button favourite-animal-button-wrapper button-wrapper"
+            >
                 <img class="button-image" src="../assets/play.svg" alt="play" />
                 <p class="button-text">watch online</p>
             </button>
@@ -47,22 +53,22 @@
                 <a
                     href="https://www.instagram.com/?hl=ru"
                     target="_blank"
-                    class="fa-social-link-instagram"
+                    class="social-link-instagram"
                 ></a
                 ><a
                     href="https://twitter.com/?lang=ru"
                     target="_blank"
-                    class="fa-social-link-twitter"
+                    class="social-link-twitter"
                 ></a
                 ><a
                     href="https://www.youtube.com/"
                     target="_blank"
-                    class="fa-social-link-youtube"
+                    class="social-link-youtube"
                 ></a
                 ><a
                     href="https://vk.com/insikynwa"
                     target="_blank"
-                    class="fa-social-link-vk"
+                    class="social-link-vk"
                 ></a>
             </div>
             <div class="favourite-animal-slider-wrapper">
@@ -98,6 +104,8 @@
                 <div class="favourite-animal-slider"></div>
             </div>
         </section>
+
+        <!-- How it works section -->
         <section class="how-works-wrapper">
             <div class="how-works-description-wrapper">
                 <div class="hw-description">
@@ -124,7 +132,7 @@
                 </div>
                 <div class="hw-buttons">
                     <div class="hw-slider"></div>
-                    <button class="online-button hw-button-wrapper">
+                    <button class="online-button button-wrapper">
                         <img
                             class="button-image"
                             src="../assets/play.svg"
@@ -134,7 +142,6 @@
                     </button>
                 </div>
             </div>
-
             <div class="how-works-cards-wrapper">
                 <div class="inspire-card-wrapper">
                     <img
@@ -177,6 +184,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- Pets in zoo section -->
         <section class="pets-in-zoo-wrapper">
             <h2 class="pets-in-zoo-title">Pets in Zoo</h2>
             <div class="pets-in-zoo-images-wrapper">
@@ -242,6 +251,8 @@
                     </button>
                 </form>
             </div>
+
+            <!-- Pay and feed section -->
         </section>
         <section class="pay-and-feed-wrapper">
             <h2 class="pay-and-feed-title">Pay and feed</h2>
@@ -277,6 +288,8 @@
                 />
             </div>
             <button class="pay-and-feed-button">donate</button>
+
+            <!-- Testimonials section -->
         </section>
         <section class="testimonials-wrapper">
             <h2 class="testimonials-title">Testimonials</h2>
@@ -326,19 +339,169 @@
                 <div class="testimonials-slider"></div>
                 <button class="pets-in-zoo-button">leave feedback</button>
             </div>
+
+            <!-- Map section -->
         </section>
         <section class="map-wrapper">
             <h2 class="map-title">Map</h2>
             <div class="map-block-wrapper">
-                <div class="map-dot-hawk"></div>
-                <div class="map dot"></div>
-                <div class="map dot"></div>
-                <div class="map dot"></div>
+                <div class="map-dot-wrapper">
+                    <div class="map-dot-hawk">
+                        <div class="map-tooltip-wrapper">
+                            <img
+                                class="tooltip-logo"
+                                src="../assets/hawk-logo.svg"
+                                alt="tooltip-logo"
+                            />
+                            <div class="tooltip-text-wrapper">
+                                <h4 class="tooltip-title">
+                                    West End Bald Eagle
+                                </h4>
+                                <p class="tooltip-descrption">
+                                    <span class="tooltip-description-title"
+                                        >Region:</span
+                                    >on an island near Los Angeles
+                                </p>
+                                <p class="tooltip-descrption">
+                                    <span class="tooltip-description-title"
+                                        >Population:</span
+                                    >more than 270 pairs in 2013
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-dot-crocodile"></div>
+                <div class="map-dot-gorilla"></div>
+                <div class="map-dot-panda"></div>
             </div>
-            <button class="online-button">
+            <button class="online-button button-wrapper">
                 <img class="button-image" src="../assets/play.svg" alt="play" />
                 <p class="button-text">watch online</p>
             </button>
         </section>
+
+        <!-- Footer section -->
+        <footer class="footer">
+            <div class="footer-wrapper">
+                <section class="footer-contact-wrapper">
+                    <a class="footer-logo" href="#">
+                        <img src="../assets/logo-light.svg" alt="logo" />
+                    </a>
+                    <h3 class="contact-title">Contact us</h3>
+                    <form class="form-wrapper">
+                        <input
+                            type="text"
+                            required
+                            placeholder="Name"
+                            class="footer-contact-name"
+                        /><input
+                            type="email"
+                            required
+                            placeholder="Email"
+                            class="footer-contact-email"
+                        />
+                        <fieldset class="textarea-wrapper">
+                            <legend class="footer-contact-message-title">
+                                Please enter your message
+                            </legend>
+                            <textarea
+                                class="footer-contact-message"
+                                required
+                                maxlength="280"
+                            >
+                            </textarea>
+                        </fieldset>
+                        <p class="footer-contact-agree-wrapper">
+                            <label class="footer-contact-agree"
+                                ><input
+                                    type="checkbox"
+                                    class="footer-contact-agree-input"
+                                />
+                                I agree to the processing of Personal
+                                Data</label
+                            >
+                        </p>
+                    </form>
+                    <button class="footer-contact-button" type="submit">
+                        <p class="footer-contact-button-text">send</p>
+                        >
+                        <img
+                            class="button-arrow-image"
+                            src="../assets/button-arrow.svg"
+                            alt="button-arrow"
+                        />
+                    </button>
+                </section>
+
+                <section class="footer-information-wrapper">
+                    <div class="footer-navigation-wrapper">
+                        <a class="footer-navigation about" href="#">About</a>
+                        <a class="footer-navigation zoos">Zoos</a>
+                        <a class="footer-navigation map">Map</a>
+                        <a
+                            class="footer-navigation design"
+                            href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp?node-id=0%3A1"
+                            >Design</a
+                        >
+                        <button
+                            class="pets-in-zoo-button footer-navigation-button"
+                        >
+                            donate for volunteers
+                        </button>
+                    </div>
+                    <div class="footer-address-wrapper">
+                        <h3 class="footer-address-title">ZOO Online Centre</h3>
+                        <div>
+                            <p class="zoo-address">
+                                132, Address District, Street
+                            </p>
+                            <p class="zoo-work-time">
+                                Open Daily 10:00 am - 5:00 pm
+                            </p>
+                        </div>
+                        <address class="address-wrapper">
+                            <a href="tel:7021633433" class="zoo-phone"
+                                >T(702) 163-3433</a
+                            >
+                            <a
+                                href="mailto:zoo.online@gmail.com"
+                                class="zoo-email"
+                                >zoo.online@gmail.com</a
+                            >
+                        </address>
+                    </div>
+                    <div class="footer-socials-wrapper">
+                        <a
+                            href="https://www.instagram.com/?hl=ru"
+                            target="_blank"
+                            class="social-link-instagram"
+                        ></a
+                        ><a
+                            href="https://twitter.com/?lang=ru"
+                            target="_blank"
+                            class="social-link-twitter"
+                        ></a
+                        ><a
+                            href="https://vk.com/insikynwa"
+                            target="_blank"
+                            class="social-link-vk"
+                        ></a
+                        ><a
+                            href="https://www.youtube.com/"
+                            target="_blank"
+                            class="social-link-youtube"
+                        ></a>
+                    </div>
+                </section>
+            </div>
+            <div class="footer-line"></div>
+            <div class="project-copiright-wrapper">
+                <p class="project-copiright-name">©Noora Sagnayeva</p>
+                <p class="project-copiright">
+                    ©RSSchool and ©Yem Digital - 2021
+                </p>
+            </div>
+        </footer>
     </body>
 </html>
