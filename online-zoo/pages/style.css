@@ -484,6 +484,9 @@ input:checked + .slider:before {
     height: 49px;
     margin-bottom: 30px;
 }
+.pets-in-zoo-slider:hover {
+    cursor: pointer;
+}
 .pets-in-zoo-button {
     width: 245px;
     height: 55px;
