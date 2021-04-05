@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+}
+a {
+    text-decoration: none;
+}
+button {
+    padding: 0;
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    background: transparent;
+    outline: none;
+}
+.header-wrapper {
+    padding-top: 20px;
+    width: 100%;
+    height: 780px;
+    background-image: url(assets/fox.jpg);
+    background-size: cover;
+    background-color: #02160b;
+}
+
+header {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 calc((100% - 1200px) / 2);
+}
+
+.logo-with-title {
+    display: flex;
+    align-items: center;
+}
+.header-title {
+    color: #f7f7f7;
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+.navigation-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item-wrapper {
+    font-size: 23px;
+    line-height: 60px;
+    color: #f7f7f7;
+    margin-left: 65px;
+}
+.nav-item-wrapper:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.nav-search {
+    margin-left: 60px;
+}
+.nav-search {
+    cursor: pointer;
+}
+
+.nav-sign {
+    width: 120px;
+    height: 50px;
+    border: 2px solid #cd6326;
+    border-radius: 5px;
+    color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 61px;
+}
+.nav-sign:hover {
+    background: #cd6326;
+    cursor: pointer;
+    border: 2px solid #cd6326;
+}
+.nav-sign:active {
+    background: #8f5613;
+    cursor: pointer;
+    border-color: #8f5613;
+}
+.nav-sign-text {
+    font-family: Roboto;
+    font-size: 23px;
+    line-height: 27px;
+}
+
+.survival-wrapper {
+    padding: 120px calc((100% - 1200px) / 2) 0;
+}
+
+.survival-title {
+    font-size: 48px;
+    line-height: 72px;
+    letter-spacing: 2px;
+    color: #cd6326;
+}
+
+.survival-description {
+    width: 274px;
+    font-size: 18px;
+    line-height: 27px;
+    color: #f7f7f7;
+    padding-top: 51px;
+}
+.donate-button {
+    width: 160px;
+    height: 60px;
+    background: #cd6326;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
+    letter-spacing: 1px;
+    font-size: 23px;
+    line-height: 27px;
+    color: #f7f7f7;
+    margin-top: 49px;
+}
+
+.donate-button:hover {
+    background: #e39128;
+    cursor: pointer;
+    border-color: #e39128;
+}
+
+.donate-button:active {
+    background: #8f5613;
+    cursor: pointer;
+    border-color: #8f5613;
+}
+
+.main-content-wrapper {
+    padding-top: 120px;
+    height: 1368px;
+    background: #cccccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.articles-wrapper {
+    width: 100%;
+}
+.articles-title {
+    text-align: center;
+    font-size: 48px;
+    line-height: 72px;
+    color: #333333;
+}
+.articles-description {
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 36px;
+    color: #666666;
+    text-align: center;
+}
+.articles-slider {
+    width: 100%;
+    height: 360px;
+    margin-top: 120px;
+    padding: 0 calc((100% - 1200px) / 2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.slider-arrow:hover {
+    cursor: pointer;
+}
+
+.slider-item-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slider-text-block {
+    position: absolute;
+    top: 247px;
+}
+
+.slider-item-title {
+    font-size: 22px;
+    line-height: 36px;
+    color: #f7f7f7;
+    text-align: center;
+}
+
+.slider-item-subtitle {
+    font-size: 17px;
+    margin-top: 10px;
+    line-height: 27px;
+    color: #f7f7f7;
+}
+.notified-wrapper {
+    margin-top: 239px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.notified-title {
+    font-size: 27px;
+    line-height: 40px;
+    text-align: center;
+    color: #333333;
+}
+.notified-form {
+    margin-top: 61px;
+    display: flex;
+}
+.notified-input {
+    width: 540px;
+    height: 60px;
+    background: transparent;
+    padding: 0 15px;
+    border: 1px solid #666666;
+    border-right-width: 0;
+    font-size: 23px;
+    line-height: 27px;
+    font-family: Roboto;
+    letter-spacing: 1.5px;
+    outline: none;
+}
+.notified-button {
+    width: 120px;
+    height: 60px;
+    background: #cd6326;
+    border: 1px solid #cd6326;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 23px;
+    line-height: 27px;
+    font-family: Roboto;
+    letter-spacing: 1.5px;
+    color: #f7f7f7;
+    outline: none;
+}
+.notified-button:hover {
+    background: #e39128;
+    cursor: pointer;
+    border-color: #e39128;
+}
+.notified-button:active {
+    background: #8f5613;
+    cursor: pointer;
+    border-color: #8f5613;
+}
+
+.footer-wrapper {
+    background-image: url(assets/footer.jpg);
+    height: 360px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 calc((100% - 1200px) / 2);
+}
+.footer-title {
+    font-size: 32px;
+    width: 155px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #f7f7f7;
+    margin-left: 15px;
+}
+
+.additional-information {
+    display: flex;
+    font-size: 23px;
+    line-height: 60px;
+    color: #f7f7f7;
+}
+
+.additional-article {
+    margin-right: 85px;
+}
+.additional-article:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.additional-about-us {
+    margin-right: 88px;
+}
+.additional-about-us:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.additional-learn-more {
+    margin-right: 3px;
+}
+
+.additional-learn-more:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.social-wrapper {
+    display: flex;
+}
+.facebook {
+    background-image: url(assets/facebook.svg);
+    height: 40px;
+    width: 40px;
+    margin-right: 27px;
+}
+.facebook:hover {
+    cursor: pointer;
+}
+.instagram {
+    background-image: url(assets/instagram.svg);
+    height: 40px;
+    width: 40px;
+    margin-right: 26px;
+}
+.instagram:hover {
+    cursor: pointer;
+}
+.pinterest {
+    background-image: url(assets/pinterest.svg);
+    height: 40px;
+    width: 40px;
+    margin-right: 27px;
+}
+.pinterest:hover {
+    cursor: pointer;
+}
+.telegram {
+    background-image: url(assets/telegram.svg);
+    height: 40px;
+    width: 40px;
+}
+.telegram:hover {
+    cursor: pointer;
+}
