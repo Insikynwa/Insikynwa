@@ -230,18 +230,18 @@ input:checked + .slider:before {
     width: 245px;
     height: 49px;
     margin-top: 32px;
-    background-image: url(../../assets/slider-dark-0208.svg);
+    background-image: url(../assets/slider-dark-0208.svg);
 }
 .map-block-wrapper {
     position: relative;
-    background-image: url(../../assets/map.svg);
+    background-image: url(../assets/map.svg);
     width: 1200px;
     height: 498px;
     margin-bottom: 35px;
 }
 .map-dot-hawk {
     position: absolute;
-    background-image: url(../../assets/map-hawk-turquoise.svg);
+    background-image: url(../assets/map-hawk-turquoise.svg);
     width: 93.36px;
     height: 105px;
     filter: drop-shadow(2px 4px 15px rgba(6, 12, 70, 0.15));
@@ -249,13 +249,13 @@ input:checked + .slider:before {
     top: 12.6%;
 }
 .map-dot-hawk:hover {
-    background-image: url(../../assets/map-hawk-red.svg);
+    background-image: url(../assets/map-hawk-red.svg);
     cursor: pointer;
 }
 
 .map-dot-crocodile {
     position: absolute;
-    background-image: url(../../assets/map-crocodile-turquoise.svg);
+    background-image: url(../assets/map-crocodile-turquoise.svg);
     width: 93.36px;
     height: 105px;
     filter: drop-shadow(2px 4px 15px rgba(6, 12, 70, 0.15));
@@ -263,12 +263,12 @@ input:checked + .slider:before {
     top: 18.1%;
 }
 .map-dot-crocodile:hover {
-    background-image: url(../../assets/map-crocodile-red.svg);
+    background-image: url(../assets/map-crocodile-red.svg);
     cursor: pointer;
 }
 .map-dot-gorilla {
     position: absolute;
-    background-image: url(../../assets/map-gorilla-turquoise.svg);
+    background-image: url(../assets/map-gorilla-turquoise.svg);
     width: 93.36px;
     height: 105px;
     filter: drop-shadow(2px 4px 15px rgba(6, 12, 70, 0.15));
@@ -276,12 +276,12 @@ input:checked + .slider:before {
     top: 35.85%;
 }
 .map-dot-gorilla:hover {
-    background-image: url(../../assets/map-gorilla-red.svg);
+    background-image: url(../assets/map-gorilla-red.svg);
     cursor: pointer;
 }
 .map-dot-panda {
     position: absolute;
-    background-image: url(../../assets/map-panda-red.svg);
+    background-image: url(../assets/map-panda-red.svg);
     width: 93.36px;
     height: 105px;
     filter: drop-shadow(2px 4px 15px rgba(6, 12, 70, 0.15));
@@ -289,7 +289,7 @@ input:checked + .slider:before {
     top: 15.8%;
 }
 /* .map-dot-panda:hover {
-    background-image: url(../../assets/map-panda-red.svg);
+    background-image: url(../assets/map-panda-red.svg);
     cursor: pointer;
 } */
 .map-tooltip-wrapper {
