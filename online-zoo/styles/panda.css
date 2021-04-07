@@ -65,18 +65,19 @@ header {
     line-height: 19px;
 }
 .navigation-zoos {
-    font-size: 16px;
-    line-height: 19px;
-}
-.navigation-map {
     border-bottom: 1px solid #333333;
     font-size: 16px;
     font-weight: 900;
     line-height: 19px;
 }
-.navigation-map:hover {
+.navigation-zoos:hover {
     cursor: default;
 }
+.navigation-map {
+    font-size: 16px;
+    line-height: 19px;
+}
+
 .navigation-contact-us {
     font-size: 16px;
     line-height: 19px;
@@ -85,7 +86,7 @@ header {
     font-size: 16px;
     line-height: 19px;
 }
-.navigation-zoos:hover,
+.navigation-map:hover,
 .navigation-about:hover,
 .navigation-contact-us:hover,
 .navigation-design:hover {
