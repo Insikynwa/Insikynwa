@@ -32,6 +32,9 @@ header {
     align-items: center;
     height: 100%;
     width: 100%;
+    justify-content: space-between;
+    padding-left: calc(100% - 1769px);
+    padding-right: calc(100% - 1771px);
 }
 
 .h1-hidden {
@@ -50,13 +53,11 @@ header {
 .header-logo {
     width: 59px;
     height: 42px;
-    padding-left: calc(100% - 1769px);
 }
 .navigation-wrapper {
     display: flex;
     width: 573px;
     height: 23px;
-    margin: 0 470px 0 464px;
     justify-content: space-between;
     align-items: center;
 }
