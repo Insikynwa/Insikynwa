@@ -164,7 +164,8 @@ input:checked + .slider:before {
     height: 1287px;
     width: 100%;
     padding-top: 100px;
-    background: #f2f2f2;
+    background: #fdfdfd;
+    box-shadow: inset 0px 4px 4px rgb(0 0 0 / 5%);
 }
 .map-title {
     width: 790px;
