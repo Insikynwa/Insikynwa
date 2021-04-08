@@ -189,7 +189,8 @@ input:checked + .slider:before {
     cursor: pointer;
 }
 
-.slider-image-panda {
+.slider-image-eagle {
+    cursor: default;
     height: 137px;
     width: 137px;
 }
