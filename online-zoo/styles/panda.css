@@ -170,16 +170,26 @@ input:checked + .slider:before {
 
 .side-bar-wrapper {
     width: 209px;
-    height: 750px;
+    height: 910px;
+    padding-bottom: 20px;
 }
-.arrow {
+.arrow-top {
     height: 30px;
     width: 30px;
     transform: rotate(-90deg);
+    margin-bottom: 20px;
 }
-.arrow:hover {
+.arrow-bottom {
+    height: 30px;
+    width: 30px;
+    transform: rotate(-90deg);
+    margin-top: 10px;
+}
+.arrow-top:hover,
+.arrow-bottom:hover {
     cursor: pointer;
 }
+
 .slider-image-panda {
     height: 137px;
     width: 137px;
@@ -194,6 +204,9 @@ input:checked + .slider:before {
     transition: all 0.4s ease-in-out;
     cursor: pointer;
     opacity: 0.8;
+}
+.slider-icon-reference {
+    margin-bottom: 10px;
 }
 .aside-sticky {
     display: flex;
