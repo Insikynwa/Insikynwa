@@ -223,7 +223,7 @@ input:checked + .slider:before {
     flex-direction: column;
 }
 .title-zoo {
-    width: 346px;
+    width: 565px;
     height: 56px;
     font-weight: 900;
     margin-bottom: 40px;
