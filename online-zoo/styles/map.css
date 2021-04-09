@@ -229,11 +229,13 @@ input:checked + .slider:before {
     opacity: 0.8;
 }
 .slider-switcher {
+    cursor: pointer;
     width: 245px;
     height: 49px;
     margin-top: 32px;
     background-image: url(../assets/slider-dark-0208.svg);
 }
+
 .map-block-wrapper {
     position: relative;
     background-image: url(../assets/map.svg);
