@@ -224,7 +224,7 @@ input:checked + .slider:before {
     flex-direction: column;
 }
 .title-zoo {
-    width: 782px;
+    width: 883px;
     height: 56px;
     font-weight: 900;
     margin-bottom: 40px;
@@ -311,7 +311,7 @@ input:checked + .slider:before {
 .description-wrapper {
     display: flex;
     flex-direction: column;
-    height: 257px;
+    height: 241px;
     margin-bottom: 35px;
 }
 .right-side-title {
@@ -324,7 +324,7 @@ input:checked + .slider:before {
 }
 .right-side-description {
     max-width: 380px;
-    max-height: 64px;
+    max-height:80px;
     font-size: 14px;
     line-height: 16px;
     margin-bottom: 13px;
