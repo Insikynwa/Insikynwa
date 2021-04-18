@@ -156,7 +156,9 @@ input:checked + .slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
-
+.menu-button {
+    display: none;
+}
 /* The zoo Section */
 .zoos-wrapper {
     display: flex;
@@ -647,15 +649,52 @@ input:checked + .slider:before {
     color: #bdbdbd;
 }
 
+@media (max-width: 1200px) {
+}
+
 @media (max-width: 640px) {
     header {
         padding: 0px;
+        justify-content: left;
     }
     .header-wrapper {
         padding: 0 20px;
     }
     .navigation-wrapper {
         display: none;
+    }
+    .switch-wrapper {
+        margin-left: 413px;
+        margin-right: 34px;
+    }
+    .menu-button {
+        display: block;
+        width: 40px;
+        height: 21px;
+        background-color: transparent;
+        position: relative;
+    }
+    .menu-line,
+    .menu-line::before,
+    .menu-line::after {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        top: 12px;
+        background-color: #333333;
+    }
+    .menu-line::before,
+    .menu-line::after {
+        content: "";
+        transition: 0.5s;
+    }
+    .menu-line::before {
+        transform: translateY(-20px);
+    }
+    .menu-line::after {
+        transform: translateY(-3px);
+        width: 33px;
+        left: 7px;
     }
     .side-bar-wrapper {
         width: 103px;
@@ -670,8 +709,8 @@ input:checked + .slider:before {
         height: 23px;
     }
     .slider-image-panda {
-        width: 90px;
-        height: 90px;
+        width: 93px;
+        height: 93px;
     }
     .slider-image {
         width: 70px;
