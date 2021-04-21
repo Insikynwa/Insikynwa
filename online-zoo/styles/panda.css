@@ -1027,8 +1027,44 @@ input:checked + .slider:before {
     .footer {
         padding: 50px 3.125vw 0 3.125vw;
     }
+    .navigation-references-wrapper {
+        padding-top: 24px;
+    }
+    .feedback-wrapper {
+        margin-top: 139px;
+    }
+    .footer-contact-wrapper {
+        width: 93.75vw;
+        margin-right: 0px;
+    }
+    .footer-contact-name {
+        width: 93.75vw;
+    }
+    .footer-contact-email {
+        width: 93.75vw;
+    }
+    .footer-contact-button {
+        width: 33.75vw;
+        margin-left: 59.4vw;
+    }
+    .textarea-wrapper {
+        width: 93.75vw;
+    }
+    .footer-contact-agree-wrapper {
+        width: 93.75vw;
+    }
+    .footer-information-wrapper {
+        margin-top: 54px;
+    }
     .footer-button {
-        left: 0;
-        top: 826px;
+        width: 85.9375vw;
+        left: 12px;
+        top: 827px;
+    }
+    .footer-line {
+        margin-top: 178px;
+    }
+    .project-copiright-wrapper {
+        margin-bottom: 27px;
     }
 }
