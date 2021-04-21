@@ -321,7 +321,6 @@ input:checked + .slider:before {
 .description-wrapper {
     display: flex;
     flex-direction: column;
-    height: 209px;
     margin-bottom: 35px;
 }
 .right-side-title {
@@ -713,7 +712,6 @@ input:checked + .slider:before {
         max-width: 21.0835vw;
     }
     .description-wrapper {
-        height: 264px;
         margin-bottom: 20px;
     }
     .right-side-description {
@@ -906,7 +904,6 @@ input:checked + .slider:before {
     }
     .description-wrapper {
         margin-bottom: 30px;
-        height: 100%;
     }
     .right-side-button {
         width: 185px;
@@ -951,14 +948,14 @@ input:checked + .slider:before {
     .footer-contact-agree-wrapper {
         width: 60.2vw;
     }
-    .footer-contact-button{
+    .footer-contact-button {
         width: 16.875vw;
         margin-left: 40.6vw;
     }
     .footer-button {
         position: absolute;
-        width: 275px;
-        left: 325px;
+        width: 42.96875vw;
+        left: 50.78125vw;
         top: 0;
     }
     .feedback-wrapper {
@@ -971,5 +968,67 @@ input:checked + .slider:before {
     }
     .footer-line {
         margin-top: 71px;
+    }
+}
+
+/* Media - 320px */
+@media (max-width: 320px) {
+    .header-wrapper {
+        padding: 0 10px;
+    }
+    header {
+        padding: 0px;
+        justify-content: left;
+    }
+    .switch-wrapper {
+        margin-left: 38vw;
+        margin-right: 24.5vw;
+    }
+    .zoos-wrapper {
+        padding-bottom: 60px;
+        padding-right: 6.25vw;
+    }
+    .side-bar-wrapper {
+        padding: 0;
+        margin-top: 34px;
+    }
+    .zoo-video-wrapper {
+        padding: 35px 0 0 0;
+    }
+    .title-zoo {
+        width: 57.5vw;
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 20px;
+        height: 28px;
+    }
+    .video-wrapper {
+        max-width: 65.0625vw;
+    }
+    .zoo-video-player {
+        width: 65.0625vw;
+        height: 116px;
+        margin-bottom: 4px;
+    }
+    .preview-player {
+        height: 56.26px;
+        width: 31.125vw;
+        margin-right: 9px;
+    }
+    .preview-player.second {
+        margin-right: 0;
+    }
+    .preview-player.last {
+        display: none;
+    }
+    .preview-plug {
+        width: 31.125vw;
+    }
+    .footer {
+        padding: 50px 3.125vw 0 3.125vw;
+    }
+    .footer-button {
+        left: 0;
+        top: 826px;
     }
 }
