@@ -791,8 +791,8 @@ input:checked + .slider:before {
         display: none;
     }
     .switch-wrapper {
-        margin-left: 413px;
-        margin-right: 34px;
+        margin-left: 64.53125vw;
+        margin-right: 5.3125vw;
     }
     .menu-button-wrapper {
         display: block;
