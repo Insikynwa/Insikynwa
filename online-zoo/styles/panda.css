@@ -839,6 +839,10 @@ input:checked + .slider:before {
     .side-bar-wrapper {
         width: 16.09375vw;
         padding: 60px 6px 20px 7px;
+        margin-top: 0;
+    }
+    .aside-sticky {
+        top: 0%;
     }
     .arrow-top {
         width: 3.59375vw;
