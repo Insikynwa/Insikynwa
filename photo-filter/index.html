@@ -18,7 +18,7 @@
       <h1 class="header-title">Photo-filter</h1>
     </header>
     <main class="main">
-      <div class="filters">
+      <div id = "filters" class="filters">
         <label>
           Blur:
           <input
@@ -29,7 +29,7 @@
             max="10"
             value="0"
           />
-          <output name="result">0</output>
+          <output id="blur" name="result">0</output>
         </label>
         <label>
           Invert:
@@ -41,7 +41,7 @@
             max="100"
             value="0"
           />
-          <output name="result">0</output>
+          <output id="invert" name="result">0</output>
         </label>
         <label>
           Sepia:
@@ -53,7 +53,7 @@
             max="100"
             value="0"
           />
-          <output name="result">0</output>
+          <output id="sepia" name="result">0</output>
         </label>
         <label>
           Saturate:
@@ -65,7 +65,7 @@
             max="200"
             value="100"
           />
-          <output name="result">100</output>
+          <output id="saturate" name="result">100</output>
         </label>
         <label>
           Hue rotate:
@@ -77,7 +77,7 @@
             max="360"
             value="0"
           />
-          <output name="result">0</output>
+          <output id="hue" name="result">0</output>
         </label>
       </div>
       <div class="editor">
@@ -96,7 +96,7 @@
           </label>
           <button class="btn btn-save">Save picture</button>
         </div>
-        <img src="assets/img/img.jpg" alt="image" />
+        <img id = "main-img" src="assets/img/img.jpg" alt="image" />
       </div>
     </main>
     <footer class="footer">
