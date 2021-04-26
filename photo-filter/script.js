@@ -4,7 +4,8 @@ const filters = document.getElementById("filters");
 const imgId = document.getElementById("main-img");
 const reset = document.querySelector(".btn-reset");
 const next = document.querySelector(".btn-next");
-const inputSelectors = document.querySelectorAll("input");
+const inputRange = document.querySelectorAll('input[type="range"]');
+const inputFile = document.querySelector('input[type="file"]');
 let isPressed = false;
 let i = 1;
 
@@ -48,15 +49,13 @@ reset.addEventListener("click", () => {
   resetValues();
 });
 const resetValues = () => {
-  inputSelectors.forEach((element) => {
-    if (element.type === "range") {
-      let dataSizing = element.dataset.sizing;
-      let defValue = element.defaultValue;
-      imgId.style.setProperty(`--${element.name}`, defValue + dataSizing);
-      let output = document.getElementById(element.name);
-      output.value = defValue;
-      element.value = defValue;
-    }
+  inputRange.forEach((element) => {
+    let dataSizing = element.dataset.sizing;
+    let defValue = element.defaultValue;
+    imgId.style.setProperty(`--${element.name}`, defValue + dataSizing);
+    let output = document.getElementById(element.name);
+    output.value = defValue;
+    element.value = defValue;
   });
 };
 
@@ -71,10 +70,10 @@ const handleFullScreen = () => {
 };
 
 next.addEventListener("click", () => {
-  handleChangeImage();
+  handleGetImage();
 });
 
-const handleChangeImage = () => {
+const handleGetImage = () => {
   const image = new Image();
   let num = 0;
 
@@ -89,12 +88,16 @@ const handleChangeImage = () => {
   i++;
   let timeOfDay = handleGetHours();
   image.src = imgUrl + timeOfDay + `/${num}.jpg`;
+  handleChangeImage(image.src, image);
+};
+
+const handleChangeImage = (src, image) => {
   next.disabled = true;
   setTimeout(function () {
     next.disabled = false;
   }, 500);
   image.onload = () => {
-    imgId.setAttribute("src", image.src);
+    imgId.setAttribute("src", src);
   };
 };
 
@@ -108,3 +111,15 @@ const handleGetHours = () => {
     return "evening";
   } else return "night";
 };
+
+inputFile.addEventListener("input", () => {
+  const file = inputFile.files[0];
+  const reader = new FileReader();
+  reader.onload = () => {
+    const image = new Image();
+    image.src = reader.result;
+    handleChangeImage(image.src, image);
+    inputFile.value = null; // why?
+  };
+  reader.readAsDataURL(file);
+});
