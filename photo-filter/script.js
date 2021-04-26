@@ -6,6 +6,7 @@ const reset = document.querySelector(".btn-reset");
 const next = document.querySelector(".btn-next");
 const inputRange = document.querySelectorAll('input[type="range"]');
 const inputFile = document.querySelector('input[type="file"]');
+const canvas = document.querySelector("canvas");
 let isPressed = false;
 let i = 1;
 
@@ -87,6 +88,7 @@ const handleGetImage = () => {
   i++;
   let timeOfDay = handleGetHours();
   image.src = imgUrl + timeOfDay + `/${num}.jpg`;
+  drawImage(image.src);
   handleChangeImage(image.src, image);
 };
 
@@ -122,3 +124,16 @@ inputFile.addEventListener("input", () => {
   };
   reader.readAsDataURL(file);
 });
+
+function drawImage(src) {
+  const img = new Image();
+  img.setAttribute("crossOrigin", "anonymous");
+  img.src = src;
+  img.onload = function () {
+    canvas.width = img.width;
+    canvas.height = img.height;
+    const ctx = canvas.getContext("2d");
+    ctx.drawImage(img, 0, 0);
+  };
+}
+drawImage();
