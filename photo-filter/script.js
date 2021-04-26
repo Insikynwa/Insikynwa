@@ -15,7 +15,6 @@ filters.addEventListener("mousedown", () => {
 filters.addEventListener("mouseup", (event) => {
   handleChangeOutput(event);
   handleUpdateFilter(event);
-
   isPressed = false;
 });
 
