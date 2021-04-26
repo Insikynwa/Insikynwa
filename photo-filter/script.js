@@ -1,5 +1,7 @@
 const filters = document.getElementById("filters");
 const imgId = document.getElementById("main-img");
+const reset = document.querySelector(".btn-reset");
+const inputSelectors = document.querySelectorAll("input");
 let isPressed = false;
 
 const handleChangeOutput = (event) => {
@@ -10,6 +12,7 @@ const handleChangeOutput = (event) => {
   }
 };
 
+// Апдейт значений фильтра
 const handleUpdate = (event) => {
   if (event.target?.type === "range") {
     let dataSizing = event.target.dataset.sizing;
@@ -17,7 +20,6 @@ const handleUpdate = (event) => {
       `--${event.target.name}`,
       event.target.value + dataSizing
     );
-    // console.log(imgId)
   }
 };
 
@@ -37,6 +39,22 @@ filters.addEventListener("mousemove", (event) => {
     handleUpdate(event);
   }
 });
+
+reset.addEventListener("click", () => {
+  resetValues();
+});
+const resetValues = () => {
+  inputSelectors.forEach((element) => {
+    if (element.type === "range") {
+      let dataSizing = element.dataset.sizing;
+      let defValue = element.defaultValue;
+      imgId.style.setProperty(`--${element.name}`, defValue + dataSizing);
+      let output = document.getElementById(element.name);
+      output.value = defValue;
+      element.value = defValue;
+    }
+  });
+};
 
 const handleFullScreen = () => {
   if (!document.fullscreenElement) {
