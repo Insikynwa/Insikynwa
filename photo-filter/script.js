@@ -4,8 +4,10 @@ const filters = document.getElementById("filters");
 const imgId = document.getElementById("main-img");
 const reset = document.querySelector(".btn-reset");
 const next = document.querySelector(".btn-next");
+const save = document.querySelector(".btn-save");
 const inputRange = document.querySelectorAll('input[type="range"]');
 const inputFile = document.querySelector('input[type="file"]');
+let blurValue = 0;
 let isPressed = false;
 let i = 1;
 
@@ -15,7 +17,6 @@ filters.addEventListener("mousedown", () => {
 filters.addEventListener("mouseup", (event) => {
   handleChangeOutput(event);
   handleUpdateFilter(event);
-
   isPressed = false;
 });
 
@@ -38,6 +39,9 @@ const handleChangeOutput = (event) => {
 const handleUpdateFilter = (event) => {
   if (event.target?.type === "range") {
     let dataSizing = event.target.dataset.sizing;
+    if (event.target.name === "blur") {
+      blurValue = event.target.value;
+    }
     imgId.style.setProperty(
       `--${event.target.name}`,
       event.target.value + dataSizing
@@ -56,6 +60,7 @@ const resetValues = () => {
     let output = document.getElementById(element.name);
     output.value = defValue;
     element.value = defValue;
+    blurValue = 0;
   });
 };
 
@@ -123,3 +128,46 @@ inputFile.addEventListener("input", () => {
   };
   reader.readAsDataURL(file);
 });
+
+save.addEventListener("click", () => {
+  handleSaveImage();
+});
+
+const handleSaveImage = () => {
+  const img = new Image();
+  img.setAttribute("crossOrigin", "anonymous");
+  img.src = imgId.src;
+
+  img.onload = function () {
+    let canvas = document.createElement("canvas");
+    let context = canvas.getContext("2d");
+
+    canvas.width = img.width;
+    canvas.height = img.height;
+
+    const filters = window.getComputedStyle(imgId).getPropertyValue("filter");
+    const blurCoef =
+      img.width > img.height
+        ? img.width / imgId.clientWidth
+        : img.height / imgId.clientHeight;
+    const formattedFilters = filters.replace(
+      /blur\(\w+\)/,
+      `blur(${blurValue * blurCoef}px)`
+    );
+    context.filter = formattedFilters;
+
+    context.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+    let imgLink = document.createElement("a");
+    imgLink.id = "download";
+    imgLink.href = canvas.toDataURL("image/jpeg");
+    imgLink.download = "photo.jpg";
+
+    document.body.appendChild(imgLink);
+    imgLink.click();
+
+    setTimeout(function () {
+      imgLink.remove();
+    }, 1000);
+  };
+};
