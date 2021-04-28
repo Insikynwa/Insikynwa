@@ -6,27 +6,13 @@ const reset = document.querySelector(".btn-reset");
 const next = document.querySelector(".btn-next");
 const save = document.querySelector(".btn-save");
 const inputRange = document.querySelectorAll('input[type="range"]');
-const inputFile = document.querySelector('input[type="file"]');
+const inputFile = document.querySelector('input[type="file"]'); // download input
 let blurValue = 0;
 let isPressed = false;
 let i = 1;
 
-filters.addEventListener("mousedown", () => {
-  isPressed = true;
-});
-filters.addEventListener("mouseup", (event) => {
-  handleChangeOutput(event);
-  handleUpdateFilter(event);
-  isPressed = false;
-});
-
-filters.addEventListener("mousemove", (event) => {
-  if (isPressed) {
-    handleChangeOutput(event);
-    handleUpdateFilter(event);
-  }
-});
-
+// Functions
+// Change output value
 const handleChangeOutput = (event) => {
   const input = event.target;
   if (input?.type === "range") {
@@ -35,7 +21,7 @@ const handleChangeOutput = (event) => {
   }
 };
 
-// Апдейт значений фильтра
+// Change filter value
 const handleUpdateFilter = (event) => {
   if (event.target?.type === "range") {
     let dataSizing = event.target.dataset.sizing;
@@ -49,9 +35,7 @@ const handleUpdateFilter = (event) => {
   }
 };
 
-reset.addEventListener("click", () => {
-  resetValues();
-});
+// Reset filter value
 const resetValues = () => {
   inputRange.forEach((element) => {
     let dataSizing = element.dataset.sizing;
@@ -64,6 +48,7 @@ const resetValues = () => {
   });
 };
 
+// Full screen
 const handleFullScreen = () => {
   if (!document.fullscreenElement) {
     document.body.webkitRequestFullScreen();
@@ -74,10 +59,7 @@ const handleFullScreen = () => {
   }
 };
 
-next.addEventListener("click", () => {
-  handleGetImage();
-});
-
+// Get src image from foreign source
 const handleGetImage = () => {
   const image = new Image();
   let num = 0;
@@ -96,6 +78,7 @@ const handleGetImage = () => {
   handleChangeImage(image.src, image);
 };
 
+// Change src image
 const handleChangeImage = (src, image) => {
   next.disabled = true;
   setTimeout(function () {
@@ -106,6 +89,7 @@ const handleChangeImage = (src, image) => {
   };
 };
 
+// Get current time
 const handleGetHours = () => {
   let hours = new Date().getHours();
   if (hours >= 06 && hours < 12) {
@@ -117,22 +101,20 @@ const handleGetHours = () => {
   } else return "night";
 };
 
-inputFile.addEventListener("input", () => {
+// Download image
+const handleDownloadImage = () => {
   const file = inputFile.files[0];
   const reader = new FileReader();
   reader.onload = () => {
     const image = new Image();
     image.src = reader.result;
     handleChangeImage(image.src, image);
-    inputFile.value = null; // why?
+    inputFile.value = null;
   };
   reader.readAsDataURL(file);
-});
+};
 
-save.addEventListener("click", () => {
-  handleSaveImage();
-});
-
+// Save image add apply canvas filter
 const handleSaveImage = () => {
   const img = new Image();
   img.setAttribute("crossOrigin", "anonymous");
@@ -171,3 +153,37 @@ const handleSaveImage = () => {
     }, 1000);
   };
 };
+
+// Add listeners
+filters.addEventListener("mousedown", () => {
+  isPressed = true;
+});
+
+filters.addEventListener("mouseup", (event) => {
+  handleChangeOutput(event);
+  handleUpdateFilter(event);
+  isPressed = false;
+});
+
+filters.addEventListener("mousemove", (event) => {
+  if (isPressed) {
+    handleChangeOutput(event);
+    handleUpdateFilter(event);
+  }
+});
+
+reset.addEventListener("click", () => {
+  resetValues();
+});
+
+next.addEventListener("click", () => {
+  handleGetImage();
+});
+
+inputFile.addEventListener("input", () => {
+  handleDownloadImage();
+});
+
+save.addEventListener("click", () => {
+  handleSaveImage();
+});
