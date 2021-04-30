@@ -25,7 +25,7 @@ const handleChangeOutput = (event) => {
 const handleUpdateFilter = (event) => {
   if (event.target?.type === "range") {
     let dataSizing = event.target.dataset.sizing;
-    if (event.target.name === "blur") {
+    if (event.target?.name === "blur") {
       blurValue = event.target.value;
     }
     imgId.style.setProperty(
