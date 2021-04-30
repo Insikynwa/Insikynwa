@@ -17,7 +17,7 @@ const handleChangeColor = (event) => {
   }
 };
 
-const handlerChangeImage = () => {
+const handlerChangeImage = (event) => {
   if (event.target.checked) {
   logo.setAttribute("src", logoLight);
   map.style.backgroundImage = maplight;
