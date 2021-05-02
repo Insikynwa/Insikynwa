@@ -841,7 +841,7 @@ input:checked + .slider:before {
   height: 751px;
   padding-left: 151px;
   padding-top: 100px;
-  background: var(--white-color-main);
+  background: #333333;
 }
 .footer-wrapper {
   display: flex;
