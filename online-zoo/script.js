@@ -6,8 +6,8 @@ const logoDark = "assets/logo-dark.svg";
 const maplight = "url('assets/map-light.png')";
 const mapDark = "url('assets/map-dark.svg')";
 const logo = document.getElementById("logo");
-
-console.log(inputCheckbox);
+const inputRange = document.querySelector('input[type="range"]');
+let isPressed = false;
 
 const handleChangeColor = (event) => {
   if (event.target.checked) {
@@ -19,17 +19,32 @@ const handleChangeColor = (event) => {
 
 const handleChangeImage = (event) => {
   if (event.target.checked) {
-  logo.setAttribute("src", logoLight);
-  map.style.backgroundImage = maplight;
-  }
-  else {
+    logo.setAttribute("src", logoLight);
+    map.style.backgroundImage = maplight;
+  } else {
     logo.setAttribute("src", logoDark);
     map.style.backgroundImage = mapDark;
   }
+};
 
+const handleChangeOutputValue = (input) => {
+  let output = document.getElementById(input.id);
+  output.value = "0" + input.value;
 };
 
 inputCheckbox.addEventListener("change", (event) => {
   handleChangeColor(event);
   handlerChangeImage(event);
+});
+inputRange.addEventListener("mousedown", (event) => {
+  isPressed = true;
+});
+inputRange.addEventListener("mouseup", (event) => {
+  handleChangeOutputValue(event.target);
+  isPressed = false;
+});
+inputRange.addEventListener("mousemove", (event) => {
+  if (isPressed) {
+    handleChangeOutputValue(event.target);
+  }
 });

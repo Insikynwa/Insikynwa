@@ -9,11 +9,6 @@
   color: var(--black-color-second);
 }
 
-/* :root {
-  --white-color: #ffffff;
-  --black-color: #333333;
-} */
-
 a {
   text-decoration: none;
   color: var(--black-color-second);
@@ -597,6 +592,32 @@ input:checked + .slider:before {
   padding-right: 362px;
   width: 100%;
 }
+
+.paf-card-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 245px;
+  height: 245px;
+  border-radius: 50%;
+  border: #49d6df 2px solid;
+}
+.paf-card-title {
+  width: 136px;
+  height: 46px;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: var(--black-color-second);
+}
+.paf-card-image {
+  height: 52.887px;
+  width: 65px;
+  border-radius: 0px;
+  margin-bottom: 18px;
+}
 .pay-and-feed-button {
   width: 245px;
   height: 55px;
@@ -614,6 +635,8 @@ input:checked + .slider:before {
   cursor: pointer;
   background: #2e878d;
 }
+
+
 
 /* Testimonials section */
 .testimonials-wrapper {
