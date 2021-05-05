@@ -6,7 +6,7 @@ const logoDark = "assets/logo-dark.svg";
 const maplight = "url('assets/map-light.png')";
 const mapDark = "url('assets/map-dark.svg')";
 const logo = document.getElementById("logo");
-const inputRange = document.querySelector('input[type="range"]');
+const inputRange = document.querySelectorAll('input[type="range"]');
 let isPressed = false;
 
 const handleChangeColor = (event) => {
@@ -28,7 +28,6 @@ const handleChangeImage = (event) => {
 };
 
 const handleChangeOutputValue = (input) => {
-  console.log(input);
   let output = document.getElementById(input.id);
   output.value = "0" + input.value + "/";
 };
@@ -36,18 +35,24 @@ const handleChangeOutputValue = (input) => {
 inputCheckbox.addEventListener("change", (event) => {
   handleChangeColor(event);
   handlerChangeImage(event);
+});
 
-});
-inputRange.addEventListener("mousedown", (event) => {
-  console.log(event)
-  isPressed = true;
-});
-inputRange.addEventListener("mouseup", (event) => {
-  handleChangeOutputValue(event.target);
-  isPressed = false;
-});
-inputRange.addEventListener("mousemove", (event) => {
-  if (isPressed) {
+const handleAddListener = (element) => {
+  element.addEventListener("mousedown", (event) => {
+    isPressed = true;
+  });
+
+  element.addEventListener("mouseup", (event) => {
     handleChangeOutputValue(event.target);
-  }
+    isPressed = false;
+  });
+  element.addEventListener("mousemove", (event) => {
+    if (isPressed) {
+      handleChangeOutputValue(event.target);
+    }
+  });
+};
+inputRange.forEach((item) => {
+  handleAddListener(item);
 });
+
