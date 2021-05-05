@@ -28,15 +28,18 @@ const handleChangeImage = (event) => {
 };
 
 const handleChangeOutputValue = (input) => {
+  console.log(input);
   let output = document.getElementById(input.id);
-  output.value = "0" + input.value;
+  output.value = "0" + input.value + "/";
 };
 
 inputCheckbox.addEventListener("change", (event) => {
   handleChangeColor(event);
   handlerChangeImage(event);
+
 });
 inputRange.addEventListener("mousedown", (event) => {
+  console.log(event)
   isPressed = true;
 });
 inputRange.addEventListener("mouseup", (event) => {
