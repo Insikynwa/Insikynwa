@@ -8,7 +8,7 @@
             href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,400&display=swap"
             rel="stylesheet"
         />
-        <link href="../styles/map.css" rel="stylesheet" type="text/css" />
+        <link href="../../styles/eagle.css" rel="stylesheet" type="text/css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Online-zoo</title>
     </head>
@@ -18,21 +18,24 @@
         <!-- Header section -->
         <section class="header-wrapper">
             <header>
-                <a class="header-logo" href="../index.html">
-                    <img src="../assets/logo-dark.svg" alt="logo" />
+                <a class="header-logo" href="../../index.html">
+                    <img src="../../assets/logo-dark.svg" alt="logo" />
                 </a>
                 <ul class="navigation-wrapper">
                     <li>
-                        <a class="navigation-about" href="../index.html"
+                        <a class="navigation-about" href="../../index.html"
                             >About</a
                         >
                     </li>
                     <li>
-                        <a class="navigation-zoos" href="zoos/panda.html"
-                            >Zoos</a
+                        <a class="navigation-zoos" href="">Zoos</a>
+                    </li>
+                    <li>
+                        <a class="navigation-map" href="../Intermediate.html"
+                            >Map</a
                         >
                     </li>
-                    <li><a class="navigation-map" href="">Map</a></li>
+
                     <li>
                         <a class="navigation-contact-us" href="#contact"
                             >Contact Us</a
@@ -53,121 +56,128 @@
             </header>
         </section>
 
-        <!-- Map section -->
-        <section class="map-wrapper">
-            <h2 class="map-title">Choose your favorite</h2>
-            <p class="map-description">
-                As a voice for wildlife, we are devastated by the impact of the
-                2020 Australian bushfires on precious species and their habitat,
-                and we are determined to assist in all aspects, including
-                providing veterinary support and raising much-needed emergency
-                funds. Zoo Online saves wildlife and inspires everyone to make
-                conservation a priority in their lives. Animals have the right
-                to a pain-free and happy life. They have equal claim to the
-                resources of this planet, and deserve a life of dignity and
-                compassion.As a voice for wildlife, we are devastated by the
-                impact of the 2020 Australian bushfires on precious species and
-                their habitat.
-            </p>
-            <div class="map-slider-wrapper">
-                <div class="map-slider-images-wrapper">
+        <!-- The zoo Section -->
+        <main class="zoos-wrapper">
+            <aside class="side-bar-wrapper">
+                <div class="aside-sticky">
                     <img
-                        src="../assets/left-arrow-lights.svg"
-                        alt="left-arrow"
-                        class="arrow"
+                        src="../../assets/right-arrow-light.svg"
+                        alt="arrow-top"
+                        class="arrow-top"
                     />
+                    <a class="slider-icon-reference" href="panda.html"
+                        ><img
+                            src="../../assets/icons/panda.png"
+                            alt="panda"
+                            title="panda Bei Bei"
+                            class="slider-image"
+                    /></a>
+                    <a class="slider-icon-reference" href="#"
+                        ><img
+                            src="../../assets/icons/eagle-active.png"
+                            alt="hawk"
+                            title="hawk Haw Bein"
+                            class="slider-image-eagle"
+                    /></a>
+                    <a class="slider-icon-reference" href="alligator.html"
+                        ><img
+                            src="../../assets/icons/crocodile.png"
+                            alt="alligator"
+                            title="alligator Alligator"
+                            class="slider-image"
+                    /></a>
+                    <a class="slider-icon-reference" href="gorilla.html"
+                        ><img
+                            src="../../assets/icons/gorilla.png"
+                            alt="gorilla"
+                            title="gorilla Bei Begi"
+                            class="slider-image"
+                    /></a>
                     <img
-                        src="../assets/icons/gorilla.png"
-                        alt="gorilla"
-                        class="map-slider-image gorilla"
-                    />
-                    <img
-                        src="../assets/icons/panda-active.png"
-                        alt="panda"
-                        class="map-slider-image panda"
-                    />
-                    <img
-                        src="../assets/icons/crocodile.png"
-                        alt="crocodile"
-                        class="map-slider-image"
-                    /><img
-                        src="../assets/icons/hawk.png"
-                        alt="hawk"
-                        class="map-slider-image hawk"
-                    /><img
-                        src="../assets/icons/tiger.png"
-                        alt="tiger"
-                        class="map-slider-image"
-                    /><img
-                        src="../assets/icons/elephant.png"
-                        alt="elephant"
-                        class="map-slider-image elephant"
-                    /><img
-                        src="../assets/icons/lion.png"
-                        alt="lion"
-                        class="map-slider-image"
-                    /><img
-                        src="../assets/icons/zebra.png"
-                        alt="zebra"
-                        class="map-slider-image zebra"
-                    />
-                    <img
-                        src="../assets/right-arrow-light.svg"
-                        alt="right-arrow"
-                        class="arrow"
+                        src="../../assets/left-arrow-lights.svg"
+                        alt="arrow-bottom"
+                        class="arrow-bottom"
                     />
                 </div>
-                <div class="slider-switcher"></div>
-            </div>
-            <div class="map-block-wrapper">
-                <div class="map-dot-wrapper">
-                    <div class="map-dot-hawk" title="Haw Bein">
-                        <div class="map-tooltip-wrapper">
-                            <img
-                                class="tooltip-logo"
-                                src="../assets/hawk-logo.svg"
-                                alt="tooltip-logo"
-                            />
-                            <div class="tooltip-text-wrapper">
-                                <h4 class="tooltip-title">
-                                    West End Bald Eagle
-                                </h4>
-                                <p class="tooltip-descrption">
-                                    <span class="tooltip-description-title"
-                                        >Region:</span
-                                    >on an island near Los Angeles
-                                </p>
-                                <p class="tooltip-descrption">
-                                    <span class="tooltip-description-title"
-                                        >Population:</span
-                                    >more than 270 pairs in 2013
-                                </p>
-                            </div>
-                        </div>
+            </aside>
+            <section class="zoo-video-wrapper">
+                <h2 class="title-zoo">West End Bald Eagle Cam</h2>
+                <div class="video-wrapper">
+                    <iframe
+                        class="zoo-video-player"
+                        src="https://www.youtube.com/embed/YNNPzqN9dkQ?autoplay=1&mute=1"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
+                    <div class="preview-wrapper">
+                        <iframe
+                            class="preview-player"
+                            src="https://www.youtube.com/embed/YNNPzqN9dkQ"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                        <iframe
+                            class="preview-player"
+                            src="https://www.youtube.com/embed/YNNPzqN9dkQ"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                        <iframe
+                            class="preview-player"
+                            src="https://www.youtube.com/embed/YNNPzqN9dkQ"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                        <div class="preview-plug"></div>
                     </div>
-                </div>
-                <div class="map-dot-crocodile" title="Aligator"></div>
-                <div class="map-dot-gorilla" title="Bei Begi"></div>
-                <div class="map-dot-panda" title="Bei Bei"></div>
-            </div>
-            <form action="zoos/panda.html">
-                <button class="online-button button-wrapper">
                     <img
-                        class="button-image"
-                        src="../assets/play.svg"
-                        alt="play"
+                        class="slider-dots"
+                        src="../../assets/slider-dots.png"
                     />
-                    <p class="button-text">watch online</p>
-                </button>
-            </form>
-        </section>
-
+                    <!-- <ul class="preview-slider">
+                        <li class="slider-dot">
+                            <button class="slick-button" type="button"></button>
+                        </li>
+                        <li class="slider-dot"></li>
+                        <li class="slider-dot"></li>
+                    </ul> -->
+                </div>
+            </section>
+            <aside class="right-side-wrapper">
+                <div class="description-wrapper">
+                    <h3 class="right-side-title">Population:</h3>
+                    <p class="right-side-description">
+                        More than 270 pairs in 2013
+                    </p>
+                    <h3 class="right-side-title">Habitat:</h3>
+                    <p class="right-side-description">
+                        Typically nest in forested areas adjacent to large
+                        bodies of water
+                    </p>
+                    <h3 class="right-side-title">Diet:</h3>
+                    <p class="right-side-description">
+                        Main live prey consists of medium sized mammals and
+                        birds such as rabbits, hares, grouse and ptarmigan. The
+                        diet of coastal birds includes gulls and other seabirds.
+                    </p>
+                </div>
+                <button class="right-side-button">feed</button>
+            </aside>
+        </main>
         <!-- Footer section -->
         <footer class="footer">
             <div class="footer-wrapper">
                 <section class="footer-contact-wrapper">
-                    <a class="footer-logo" href="../index.html">
-                        <img src="../assets/logo-light.svg" alt="logo" />
+                    <a class="footer-logo" href="../../index.html">
+                        <img src="../../assets/logo-light.svg" alt="logo" />
                     </a>
                     <h3 class="contact-title">
                         <a name="contact"></a>Contact us
@@ -211,7 +221,7 @@
                             >
                             <img
                                 class="button-arrow-image"
-                                src="../assets/button-arrow.svg"
+                                src="../../assets/button-arrow.svg"
                                 alt="button-arrow"
                             />
                         </button>
@@ -220,11 +230,15 @@
 
                 <section class="footer-information-wrapper">
                     <nav class="footer-navigation-wrapper">
-                        <a class="footer-navigation about" href="../index.html">About</a>
-                        <a class="footer-navigation zoos" href="zoos/panda.html"
+                        <a class="footer-navigation about" href="../../index.html">About</a>
+                        <a class="footer-navigation zoos" href="#"
                             >Zoos</a
                         >
-                        <a class="footer-navigation map" href="#">Map</a>
+                        <a
+                            class="footer-navigation map"
+                            href="../Intermediate.html"
+                            >Map</a
+                        >
                         <a
                             class="footer-navigation design"
                             href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp?node-id=0%3A1"

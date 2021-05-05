@@ -1,604 +1,616 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,400&display=swap"
-            rel="stylesheet"
-        />
-        <link href="style.css" rel="stylesheet" type="text/css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Online-zoo</title>
-    </head>
-    <body>
-        <h1 class="h1-hidden">Online zoo</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online-zoo</title>
+  </head>
+  <body>
+    <h1 class="h1-hidden">Online zoo</h1>
 
-        <!-- Header section -->
-        <section class="header-wrapper">
-            <header>
-                <a class="header-logo" href="#">
-                    <img src="assets/logo-dark.svg" alt="logo" />
-                </a>
-                <nav class="navigation-wrapper">
-                    <a class="navigation-about" href="#">About</a>
-                    <a class="navigation-zoos" href="pages/zoos/panda.html"
-                        >Zoos</a
-                    >
-                    <a class="navigation-map" href="pages/Intermediate.html"
-                        >Map</a
-                    >
-                    <a class="navigation-contact-us" href="#contact"
-                        >Contact us</a
-                    >
-                    <a
-                        class="navigation-design"
-                        href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp?node-id=0%3A1"
-                        >Design</a
-                    >
-                </nav>
-                <label class="switch-wrapper">
-                    <input type="checkbox" />
-                    <span class="slider round"></span>
-                </label>
-            </header>
-        </section>
-
-        <!-- Favoutite animal section -->
-        <section class="favourite-animal-wrapper">
-            <h2 class="favourite-animal-title">
-                Watch your favorite animal online
-            </h2>
-            <button
-                class="online-button favourite-animal-button-wrapper button-wrapper"
+    <!-- Header section -->
+    <section class="header-wrapper">
+      <header>
+        <a class="header-logo" href="#">
+          <img id="logo" src="assets/logo-dark.svg" alt="logo" />
+        </a>
+        <ul class="navigation-wrapper">
+          <li><a class="navigation-about" href="#">About</a></li>
+          <li>
+            <a class="navigation-zoos" href="pages/zoos/panda.html">Zoos</a>
+          </li>
+          <li>
+            <a class="navigation-map" href="pages/Intermediate.html">Map</a>
+          </li>
+          <li>
+            <a class="navigation-contact-us" href="#contact">Contact Us</a>
+          </li>
+          <li>
+            <a
+              class="navigation-design"
+              href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp?node-id=0%3A1"
+              >Design</a
             >
-                <img class="button-image" src="assets/play.svg" alt="play" />
-                <p class="button-text">watch online</p>
-            </button>
-            <div class="favourite-animal-slider-title"></div>
-            <div class="favourite-animal-socials-wrapper">
-                <a
-                    href="https://www.instagram.com/?hl=ru"
-                    target="_blank"
-                    class="social-link-instagram"
-                ></a
-                ><a
-                    href="https://twitter.com/?lang=ru"
-                    target="_blank"
-                    class="social-link-twitter"
-                ></a
-                ><a
-                    href="https://www.youtube.com/"
-                    target="_blank"
-                    class="social-link-youtube"
-                ></a
-                ><a
-                    href="https://vk.com/"
-                    target="_blank"
-                    class="social-link-vk"
-                ></a>
-            </div>
-            <div class="favourite-animal-slider-wrapper">
-                <div class="favourite-animal-slider-images-wrapper">
-                    <div class="favourite-animal-slider-line-wrapper">
-                        <div class="favourite-animal-slider-line-circle">
-                            <div class="favourite-animal-slider-line-dot"></div>
-                        </div>
-                        <div class="favourite-animal-slider-line"></div>
-                    </div>
-                    <img
-                        src="assets/fa-hawk.png"
-                        alt="hawk"
-                        class="favourite-animal-slider-image"
-                    />
-                    <div class="selected favourite-animal-slider-image">
-                        <img
-                            src="assets/fa-panda.png"
-                            alt="panda"
-                            class="selected favourite-animal-slider-image"
-                        />
-                        <div class="selected-image donate-wrapper">
-                            <p class="donate-title">
-                                Panda’s name is Bei Bei. He is 2 years old. Bei
-                                Bei is from China. He loves bamboos.
-                            </p>
-                            <div class="donate-buttons-wrapper">
-                                <form action="pages/zoos/panda.html">
-                                    <button class="watch-button">
-                                        <img
-                                            src="assets/piz-watch-online.svg"
-                                            alt="watch-online"
-                                        />
-                                    </button>
-                                </form>
-                                <button class="donate-button">
-                                    <img
-                                        src="assets/piz-donate.svg"
-                                        alt="donate"
-                                    />
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <img
-                        src="assets/fa-monkey.png"
-                        alt="monkey"
-                        class="favourite-animal-slider-image"
-                    /><img
-                        src="assets/fa-crocodile.png"
-                        alt="crocodile"
-                        class="favourite-animal-slider-image"
-                    /><img
-                        src="assets/fa-fox.png"
-                        alt="fox"
-                        class="favourite-animal-slider-image"
-                    />
-                </div>
-                <div class="favourite-animal-slider"></div>
-            </div>
-        </section>
+          </li>
+        </ul>
+        <label class="switch-wrapper">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+      </header>
+    </section>
 
-        <!-- How it works section -->
-        <section class="how-works-wrapper">
-            <div class="how-works-description-wrapper">
-                <div class="how-works-description">
-                    <h2 class="how-works-title">How it works?</h2>
-                    <p class="how-works-title-description">
-                        As a voice for wildlife, we are devastated by the impact
-                        of the 2020 Australian bushfires on precious species and
-                        their habitat, and we are determined to assist in all
-                        aspects, including providing veterinary support and
-                        raising much-needed emergency funds. Zoo Online saves
-                        wildlife and inspires everyone to make conservation a
-                        priority in their lives. Animals have the right to a
-                        pain-free and happy life. They have equal claim to the
-                        resources of this planet, and deserve a life of dignity
-                        and compassion.As a voice for wildlife, we are
-                        devastated by the impact of the 2020 Australian
-                        bushfires on precious species and their habitat.
-                    </p>
-                    <img
-                        src="assets/how-work-deer.png"
-                        class="how-works-img"
-                        alt="deer"
-                    />
-                </div>
-                <div class="how-works-buttons">
-                    <div class="how-works-slider"></div>
-                    <button class="online-button button-wrapper">
-                        <img
-                            class="button-image"
-                            src="assets/play.svg"
-                            alt="play"
-                        />
-                        <p class="button-text">watch online</p>
-                    </button>
-                </div>
+    <!-- Favoutite animal section -->
+    <section class="favourite-animal-wrapper">
+      <h2 class="favourite-animal-title">Watch your favorite animal online</h2>
+      <button
+        class="online-button favourite-animal-button-wrapper button-wrapper"
+      >
+        <img class="button-image" src="assets/play.svg" alt="play" />
+        <p class="button-text">watch online</p>
+      </button>
+      <div class="favourite-animal-socials-wrapper">
+        <a
+          href="https://www.instagram.com/?hl=ru"
+          target="_blank"
+          class="social-link-instagram"
+        ></a
+        ><a
+          href="https://twitter.com/?lang=ru"
+          target="_blank"
+          class="social-link-twitter"
+        ></a
+        ><a
+          href="https://www.youtube.com/"
+          target="_blank"
+          class="social-link-youtube"
+        ></a
+        ><a href="https://vk.com/" target="_blank" class="social-link-vk"></a>
+      </div>
+      <div class="favourite-animal-slider-wrapper">
+        <div class="favourite-animal-slider-images-wrapper">
+          <div class="favourite-animal-slider-line-wrapper">
+            <div class="favourite-animal-slider-line-circle">
+              <div class="favourite-animal-slider-line-dot"></div>
             </div>
-            <div class="how-works-cards-wrapper">
-                <div class="inspire-card-wrapper">
-                    <img
-                        class="inspire-card-image"
-                        src="assets/inspire-card.svg"
-                        alt="inspire"
-                    />
-                    <h3 class="card-title">What inspires us?</h3>
-                    <p class="card-description">
-                        As a voice for wildlife, we are devastated by the impact
-                        of the 2020 Australian bushfires on precious species and
-                        their habitat, and we are determined to assist in all
-                        aspects.
-                    </p>
-                </div>
-                <div class="mission-card-wrapper">
-                    <img
-                        class="mission-card-image"
-                        src="assets/mission-card.svg "
-                        alt="mission"
-                    />
-                    <h3 class="card-title">Our mission</h3>
-                    <p class="card-description">
-                        Zoo Online saves wildlife and inspires everyone to make
-                        conservation a priority in their lives.
-                    </p>
-                </div>
-                <div class="believe-card-wrapper">
-                    <img
-                        class="believe-card-image"
-                        src="assets/believe-card.svg"
-                        alt="believe"
-                    />
-                    <h3 class="card-title">What we believe in?</h3>
-                    <p class="card-description">
-                        Animals have the right to a pain-free and happy life.
-                        They have equal claim to the resources of this planet,
-                        and deserve a life of dignity and compassion.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Pets in zoo section -->
-        <section class="pets-in-zoo-wrapper">
-            <h2 class="pets-in-zoo-title">Pets in Zoo</h2>
-            <div class="pets-in-zoo-images-wrapper">
-                <button class="pets-in-zoo-arrow">
-                    <img src="assets/left-arrow-lights.svg" alt="left-arrow" />
-                </button>
-                <div class="pets-in-zoo-image">
-                    <img
-                        src="assets/fa-panda.png"
-                        alt="panda"
-                        class="pets-in-zoo-image"
-                    />
-                    <span class="donate-wrapper">
-                        <p class="donate-title">
-                            Panda’s name is Bei Bei. He is 2 years old. Bei Bei
-                            is from China. He loves bamboos.
-                        </p>
-                        <div class="donate-buttons-wrapper">
-                            <button class="watch-button">
-                                <img
-                                    src="assets/piz-watch-online.svg"
-                                    alt="watch-online"
-                                /></button
-                            ><button class="donate-button">
-                                <img src="assets/piz-donate.svg" alt="donate" />
-                            </button>
-                        </div>
-                    </span>
-                </div>
-                <div class="pets-in-zoo-image">
-                    <img
-                        src="assets/piz-hawk.png"
-                        alt="hawk"
-                        class="pets-in-zoo-image"
-                    />
-                    <span class="donate-wrapper">
-                        <p class="donate-title">
-                            Hawk’s name is Haw Bein. He is 3 years old. Haw Bein
-                            is from Texas. He loves mouses.
-                        </p>
-                        <div class="donate-buttons-wrapper">
-                            <button class="watch-button">
-                                <img
-                                    src="assets/piz-watch-online.svg"
-                                    alt="watch-online"
-                                /></button
-                            ><button class="donate-button">
-                                <img src="assets/piz-donate.svg" alt="donate" />
-                            </button>
-                        </div>
-                    </span>
-                </div>
-                <div class="pets-in-zoo-image">
-                    <img
-                        src="assets/piz-gorilla.png"
-                        alt="gorilla"
-                        class="pets-in-zoo-image"
-                    />
-                    <span class="donate-wrapper">
-                        <p class="donate-title">
-                            Gorilla’s name is Bei Begi. He is 10 years old. Bei
-                            Begi is from China. He loves bananas.
-                        </p>
-                        <div class="donate-buttons-wrapper">
-                            <button class="watch-button">
-                                <img
-                                    src="assets/piz-watch-online.svg"
-                                    alt="watch-online"
-                                /></button
-                            ><button class="donate-button">
-                                <img src="assets/piz-donate.svg" alt="donate" />
-                            </button>
-                        </div>
-                    </span>
-                </div>
-                <div class="pets-in-zoo-image">
-                    <img
-                        src="assets/piz-crocodile.png"
-                        alt="crocodile"
-                        class="pets-in-zoo-image"
-                    />
-                    <span class="donate-wrapper">
-                        <p class="donate-title">
-                            Crocodile’s name is Aligator. He is 2 years old.
-                            Aligator is from South America. He loves to eat
-                            people.
-                        </p>
-                        <div class="donate-buttons-wrapper">
-                            <button class="watch-button">
-                                <img
-                                    src="assets/piz-watch-online.svg"
-                                    alt="watch-online"
-                                /></button
-                            ><button class="donate-button">
-                                <img src="assets/piz-donate.svg" alt="donate" />
-                            </button>
-                        </div>
-                    </span>
-                </div>
-                <button class="pets-in-zoo-arrow">
-                    <img src="assets/right-arrow.svg" alt="right-arrow" />
-                </button>
-            </div>
-            <div class="pets-in-zoo-buttons">
-                <div class="pets-in-zoo-slider"></div>
-                <form action="pages/Intermediate.html" target="_blank">
-                    <button class="pets-in-zoo-button">
-                        choose your favorite
-                    </button>
+            <div class="favourite-animal-slider-line"></div>
+          </div>
+          <img
+            src="assets/fa-hawk.png"
+            alt="hawk"
+            class="favourite-animal-slider-image"
+          />
+          <div class="selected favourite-animal-slider-image">
+            <img
+              src="assets/fa-panda.png"
+              alt="panda"
+              class="selected favourite-animal-slider-image"
+            />
+            <div class="selected-image donate-wrapper">
+              <p class="donate-title">
+                Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from
+                China. He loves bamboos.
+              </p>
+              <div class="donate-buttons-wrapper">
+                <form action="pages/zoos/panda.html">
+                  <button class="watch-button">
+                    <img src="assets/piz-watch-online.svg" alt="watch-online" />
+                  </button>
                 </form>
-            </div>
-        </section>
-
-        <!-- Pay and feed section -->
-        <section class="pay-and-feed-wrapper">
-            <h2 class="pay-and-feed-title">Pay and feed</h2>
-            <p class="pay-and-feed-description">
-                The opportunity to easily and naturally (but as often as
-                possible) donate to the needs of animals that you like.
-            </p>
-            <div class="pay-and-feed-cards-wrapper">
-                <img
-                    src="assets/paf-visa.svg"
-                    alt="visa-card"
-                    class="pay-and-feed-card"
-                />
-                <img
-                    src="assets/paf-arrow.svg"
-                    alt="arrow"
-                    class="pay-and-feed-arrow"
-                />
-                <img
-                    src="assets/paf-zoo.svg"
-                    alt="zoo-card"
-                    class="pay-and-feed-card"
-                />
-                <img
-                    src="assets/paf-arrow.svg"
-                    alt="arrow"
-                    class="pay-and-feed-card"
-                />
-                <img
-                    src="assets/paf-panda.svg"
-                    alt="panda-card"
-                    class="pay-and-feed-card"
-                />
-            </div>
-            <button class="pay-and-feed-button">donate</button>
-        </section>
-
-        <!-- Testimonials section -->
-        <section class="testimonials-wrapper">
-            <h2 class="testimonials-title">Testimonials</h2>
-            <div class="testimonials-feedback-wrapper">
-                <img
-                    class="testimonials-left-arrow"
-                    src="assets/right-arrow.svg"
-                    alt="left-arrow"
-                />
-                <div class="testimonials-feedback-card">
-                    <div class="testimonial-user-wrapper">
-                        <img
-                            src="assets/testimonial-user.svg"
-                            alt="user"
-                            class="testimonial-user-image"
-                        />
-                    </div>
-                    <h3 class="tetimonials-card-title">Nastya Sidorova</h3>
-                    <p class="testimonials-card-description">
-                        As a voice for wildlife, we are devastated by the impact
-                        of the 2020 Australian bushfires on precious species and
-                        their habitat.
-                    </p>
-                </div>
-                <div class="testimonials-feedback-card">
-                    <div class="testimonial-user-wrapper">
-                        <img
-                            src="assets/testimonial-vlad-kim.png"
-                            alt="Vlad Kim"
-                            class="photo testimonial-user-image"
-                        />
-                    </div>
-                    <h3 class="tetimonials-card-title">Vlad Kim</h3>
-                    <p class="testimonials-card-description">
-                        As a voice for wildlife, we are devastated by the impact
-                        of the 2020 Australian bushfires on precious species and
-                        their habitat.
-                    </p>
-                </div>
-                <img
-                    class="testimonials-right-arrow"
-                    src="assets/right-arrow.svg"
-                    alt="right-arrow"
-                />
-            </div>
-            <div class="testimonials-buttons">
-                <div class="testimonials-slider"></div>
-                <button class="pets-in-zoo-button">leave feedback</button>
-            </div>
-        </section>
-
-        <!-- Map section -->
-        <section class="map-wrapper">
-            <h2 class="map-title">Map</h2>
-            <div class="map-block-wrapper">
-                <div class="map-dot-wrapper">
-                    <div class="map-dot-hawk">
-                        <div class="map-tooltip-wrapper">
-                            <img
-                                class="tooltip-logo"
-                                src="assets/hawk-logo.svg"
-                                alt="tooltip-logo"
-                            />
-                            <div class="tooltip-text-wrapper">
-                                <h4 class="tooltip-title">
-                                    West End Bald Eagle
-                                </h4>
-                                <p class="tooltip-descrption">
-                                    <span class="tooltip-description-title"
-                                        >Region:</span
-                                    >on an island near Los Angeles
-                                </p>
-                                <p class="tooltip-descrption">
-                                    <span class="tooltip-description-title"
-                                        >Population:</span
-                                    >more than 270 pairs in 2013
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="map-dot-crocodile"></div>
-                <div class="map-dot-gorilla"></div>
-                <div class="map-dot-panda"></div>
-            </div>
-            <form action="pages/zoos/panda.html" target="_blank">
-                <button class="online-button button-wrapper">
-                    <img
-                        class="button-image"
-                        src="assets/play.svg"
-                        alt="play"
-                    />
-                    <p class="button-text">watch online</p>
+                <button class="donate-button">
+                  <img src="assets/piz-donate.svg" alt="donate" />
                 </button>
-            </form>
-        </section>
-
-        <!-- Footer section -->
-        <footer class="footer">
-            <div class="footer-wrapper">
-                <section class="footer-contact-wrapper">
-                    <a class="footer-logo" href="#">
-                        <img src="assets/logo-light.svg" alt="logo" />
-                    </a>
-                    <h3 class="contact-title">
-                        <a name="contact"></a>Contact us
-                    </h3>
-                    <form class="form-wrapper">
-                        <input
-                            type="text"
-                            required
-                            placeholder="Name"
-                            class="footer-contact-name"
-                        /><input
-                            type="email"
-                            required
-                            placeholder="Email"
-                            class="footer-contact-email"
-                        />
-                        <fieldset class="textarea-wrapper">
-                            <legend class="footer-contact-message-title">
-                                Please enter your message
-                            </legend>
-                            <textarea
-                                class="footer-contact-message"
-                                required
-                                maxlength="280"
-                            >
-                            </textarea>
-                        </fieldset>
-                        <p class="footer-contact-agree-wrapper">
-                            <label class="footer-contact-agree"
-                                ><input
-                                    type="checkbox"
-                                    class="footer-contact-agree-input"
-                                    required
-                                />
-                                I agree to the processing of Personal
-                                Data</label
-                            >
-                        </p>
-                    </form>
-                    <button class="footer-contact-button" type="submit">
-                        <p class="footer-contact-button-text">send</p>
-                        >
-                        <img
-                            class="button-arrow-image"
-                            src="assets/button-arrow.svg"
-                            alt="button-arrow"
-                        />
-                    </button>
-                </section>
-
-                <section class="footer-information-wrapper">
-                    <nav class="footer-navigation-wrapper">
-                        <a class="footer-navigation about" href="#">About</a>
-                        <a
-                            class="footer-navigation zoos"
-                            href="pages/zoos/panda.html"
-                            >Zoos</a
-                        >
-                        <a
-                            class="footer-navigation map"
-                            href="pages/Intermediate.html"
-                            >Map</a
-                        >
-                        <a
-                            class="footer-navigation design"
-                            href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp?node-id=0%3A1"
-                            >Design</a
-                        >
-                        <button
-                            class="pets-in-zoo-button footer-navigation-button"
-                        >
-                            donate for volunteers
-                        </button>
-                    </nav>
-                    <div class="footer-address-wrapper">
-                        <h3 class="footer-address-title">ZOO Online Centre</h3>
-                        <div>
-                            <p class="zoo-address">
-                                132, Address District, Street
-                            </p>
-                            <p class="zoo-work-time">
-                                Open Daily 10:00 am - 5:00 pm
-                            </p>
-                        </div>
-                        <address class="address-wrapper">
-                            <a href="tel:7021633433" class="zoo-phone"
-                                >T(702) 163-3433</a
-                            >
-                            <a
-                                href="mailto:zoo.online@gmail.com"
-                                class="zoo-email"
-                                >zoo.online@gmail.com</a
-                            >
-                        </address>
-                    </div>
-                    <div class="footer-socials-wrapper">
-                        <a
-                            href="https://www.instagram.com/?hl=ru"
-                            target="_blank"
-                            class="social-link-instagram"
-                        ></a
-                        ><a
-                            href="https://twitter.com/?lang=ru"
-                            target="_blank"
-                            class="social-link-twitter"
-                        ></a
-                        ><a
-                            href="https://vk.com/"
-                            target="_blank"
-                            class="social-link-vk"
-                        ></a
-                        ><a
-                            href="https://www.youtube.com/"
-                            target="_blank"
-                            class="social-link-youtube"
-                        ></a>
-                    </div>
-                </section>
+              </div>
             </div>
-            <div class="footer-line"></div>
-            <div class="project-copiright-wrapper">
-                <p class="project-copiright-name">©Noora Sagnayeva</p>
-                <p class="project-copiright">
-                    ©RSSchool and ©Yem Digital - 2021
+          </div>
+          <img
+            src="assets/fa-monkey.png"
+            alt="monkey"
+            class="favourite-animal-slider-image"
+          /><img
+            src="assets/fa-crocodile.png"
+            alt="crocodile"
+            class="favourite-animal-slider-image"
+          /><img
+            src="assets/fa-fox.png"
+            alt="fox"
+            class="favourite-animal-slider-image"
+          />
+        </div>
+        <div class="slider-wrapper favourite">
+          <div class="slider-output-wrapper">
+            <output class="slider-output white-output" id="favourite-slider">
+              02/</output
+            >08
+          </div>
+          <input
+            type="range"
+            min="01"
+            max="08"
+            value="2"
+            id="favourite-slider"
+            class="little-range white-thumb"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works section -->
+    <section class="how-works-wrapper">
+      <div class="how-works-description-wrapper">
+        <div class="how-works-description">
+          <h2 class="how-works-title">How it works?</h2>
+          <p class="how-works-title-description">
+            As a voice for wildlife, we are devastated by the impact of the 2020
+            Australian bushfires on precious species and their habitat, and we
+            are determined to assist in all aspects, including providing
+            veterinary support and raising much-needed emergency funds. Zoo
+            Online saves wildlife and inspires everyone to make conservation a
+            priority in their lives. Animals have the right to a pain-free and
+            happy life. They have equal claim to the resources of this planet,
+            and deserve a life of dignity and compassion.As a voice for
+            wildlife, we are devastated by the impact of the 2020 Australian
+            bushfires on precious species and their habitat.
+          </p>
+          <img
+            src="assets/how-work-deer.png"
+            class="how-works-img"
+            alt="deer"
+          />
+        </div>
+        <div class="how-works-buttons">
+          <div class="slider-wrapper">
+            <div class="slider-output-wrapper">
+              <output class="slider-output" id="how-works-slider"> 01/</output
+              >04
+            </div>
+            <input
+              type="range"
+              min="01"
+              max="04"
+              value="1"
+              id="how-works-slider"
+            />
+          </div>
+          <button class="online-button button-wrapper">
+            <img class="button-image" src="assets/play.svg" alt="play" />
+            <p class="button-text">watch online</p>
+          </button>
+        </div>
+      </div>
+      <div class="how-works-cards-wrapper">
+        <div class="inspire-card-wrapper">
+          <img
+            class="inspire-card-image"
+            src="assets/inspire-card.svg"
+            alt="inspire"
+          />
+          <h3 class="card-title">What inspires us?</h3>
+          <p class="card-description">
+            As a voice for wildlife, we are devastated by the impact of the 2020
+            Australian bushfires on precious species and their habitat, and we
+            are determined to assist in all aspects.
+          </p>
+        </div>
+        <div class="mission-card-wrapper">
+          <img
+            class="mission-card-image"
+            src="assets/mission-card.svg "
+            alt="mission"
+          />
+          <h3 class="card-title">Our mission</h3>
+          <p class="card-description">
+            Zoo Online saves wildlife and inspires everyone to make conservation
+            a priority in their lives.
+          </p>
+        </div>
+        <div class="believe-card-wrapper">
+          <img
+            class="believe-card-image"
+            src="assets/believe-card.svg"
+            alt="believe"
+          />
+          <h3 class="card-title">What we believe in?</h3>
+          <p class="card-description">
+            Animals have the right to a pain-free and happy life. They have
+            equal claim to the resources of this planet, and deserve a life of
+            dignity and compassion.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pets in zoo section -->
+    <section class="pets-in-zoo-wrapper">
+      <h2 class="pets-in-zoo-title">Pets in Zoo</h2>
+      <div class="pets-in-zoo-images-wrapper">
+        <button class="pets-in-zoo-arrow">
+          <img src="assets/left-arrow-lights.svg" alt="left-arrow" />
+        </button>
+        <div class="pets-in-zoo-image">
+          <img
+            src="assets/fa-panda.png"
+            alt="panda"
+            class="pets-in-zoo-image"
+          />
+          <span class="donate-wrapper">
+            <p class="donate-title">
+              Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China.
+              He loves bamboos.
+            </p>
+            <div class="donate-buttons-wrapper">
+              <button class="watch-button">
+                <img
+                  src="assets/piz-watch-online.svg"
+                  alt="watch-online"
+                /></button
+              ><button class="donate-button">
+                <img src="assets/piz-donate.svg" alt="donate" />
+              </button>
+            </div>
+          </span>
+        </div>
+        <div class="pets-in-zoo-image">
+          <img src="assets/piz-hawk.png" alt="hawk" class="pets-in-zoo-image" />
+          <span class="donate-wrapper">
+            <p class="donate-title">
+              Hawk’s name is Haw Bein. He is 3 years old. Haw Bein is from
+              Texas. He loves mouses.
+            </p>
+            <div class="donate-buttons-wrapper">
+              <button class="watch-button">
+                <img
+                  src="assets/piz-watch-online.svg"
+                  alt="watch-online"
+                /></button
+              ><button class="donate-button">
+                <img src="assets/piz-donate.svg" alt="donate" />
+              </button>
+            </div>
+          </span>
+        </div>
+        <div class="pets-in-zoo-image">
+          <img
+            src="assets/piz-gorilla.png"
+            alt="gorilla"
+            class="pets-in-zoo-image"
+          />
+          <span class="donate-wrapper">
+            <p class="donate-title">
+              Gorilla’s name is Bei Begi. He is 10 years old. Bei Begi is from
+              China. He loves bananas.
+            </p>
+            <div class="donate-buttons-wrapper">
+              <button class="watch-button">
+                <img
+                  src="assets/piz-watch-online.svg"
+                  alt="watch-online"
+                /></button
+              ><button class="donate-button">
+                <img src="assets/piz-donate.svg" alt="donate" />
+              </button>
+            </div>
+          </span>
+        </div>
+        <div class="pets-in-zoo-image">
+          <img
+            src="assets/piz-crocodile.png"
+            alt="crocodile"
+            class="pets-in-zoo-image"
+          />
+          <span class="donate-wrapper">
+            <p class="donate-title">
+              Crocodile’s name is Aligator. He is 2 years old. Aligator is from
+              South America. He loves to eat people.
+            </p>
+            <div class="donate-buttons-wrapper">
+              <button class="watch-button">
+                <img
+                  src="assets/piz-watch-online.svg"
+                  alt="watch-online"
+                /></button
+              ><button class="donate-button">
+                <img src="assets/piz-donate.svg" alt="donate" />
+              </button>
+            </div>
+          </span>
+        </div>
+        <button class="pets-in-zoo-arrow">
+          <img src="assets/right-arrow.svg" alt="right-arrow" />
+        </button>
+      </div>
+      <div class="pets-in-zoo-buttons">
+        <div class="slider-wrapper">
+          <div class="slider-output-wrapper">
+            <output class="slider-output" id="pets-slider"> 01/</output>08
+          </div>
+          <input
+            type="range"
+            min="01"
+            max="08"
+            value="1"
+            id="pets-slider"
+            class="little-range"
+          />
+        </div>
+        <form action="pages/Intermediate.html" target="_blank">
+          <button class="pets-in-zoo-button">choose your favorite</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Pay and feed section -->
+    <section class="pay-and-feed-wrapper">
+      <h2 class="pay-and-feed-title">Pay and feed</h2>
+      <p class="pay-and-feed-description">
+        The opportunity to easily and naturally (but as often as possible)
+        donate to the needs of animals that you like.
+      </p>
+      <div class="pay-and-feed-cards-wrapper">
+        <div class="paf-card-wrap">
+          <img
+            src="assets/visa-card.png"
+            alt="visa-card"
+            class="paf-card-image"
+          />
+          <p class="paf-card-title">You pay with a VISA card</p>
+        </div>
+        <img
+          src="assets/paf-arrow.svg"
+          alt="arrow"
+          class="pay-and-feed-arrow"
+        />
+        <div class="paf-card-wrap">
+          <img
+            src="assets/zoo-card.png"
+            alt="visa-card"
+            class="paf-card-image"
+          />
+          <p class="paf-card-title">Payment goes to the Zoo</p>
+        </div>
+        <img src="assets/paf-arrow.svg" alt="arrow" class="pay-and-feed-card" />
+        <div class="paf-card-wrap">
+          <img
+            src="assets/panda-card.png"
+            alt="visa-card"
+            class="paf-card-image"
+          />
+          <p class="paf-card-title">Panda gets the bamboo</p>
+        </div>
+      </div>
+      <button class="pay-and-feed-button">donate</button>
+    </section>
+
+    <!-- Testimonials section -->
+    <section class="testimonials-wrapper">
+      <h2 class="testimonials-title">Testimonials</h2>
+      <div class="testimonials-feedback-wrapper">
+        <img
+          class="testimonials-left-arrow"
+          src="assets/right-arrow.svg"
+          alt="left-arrow"
+        />
+        <div class="testimonials-feedback-card">
+          <div class="testimonial-user-wrapper">
+            <img
+              src="assets/testimonial-user.svg"
+              alt="user"
+              class="testimonial-user-image"
+            />
+          </div>
+          <h3 class="tetimonials-card-title">Nastya Sidorova</h3>
+          <p class="testimonials-card-description">
+            As a voice for wildlife, we are devastated by the impact of the 2020
+            Australian bushfires on precious species and their habitat.
+          </p>
+        </div>
+        <div class="testimonials-feedback-card">
+          <div class="testimonial-user-wrapper">
+            <img
+              src="assets/testimonial-vlad-kim.png"
+              alt="Vlad Kim"
+              class="photo testimonial-user-image"
+            />
+          </div>
+          <h3 class="tetimonials-card-title">Vlad Kim</h3>
+          <p class="testimonials-card-description">
+            As a voice for wildlife, we are devastated by the impact of the 2020
+            Australian bushfires on precious species and their habitat.
+          </p>
+        </div>
+        <img
+          class="testimonials-right-arrow"
+          src="assets/right-arrow.svg"
+          alt="right-arrow"
+        />
+      </div>
+      <div class="testimonials-buttons">
+        <div class="slider-wrapper">
+          <div class="slider-output-wrapper">
+            <output class="slider-output" id="testimonials-slider"> 02/</output
+            >08
+          </div>
+          <input
+            type="range"
+            min="01"
+            max="08"
+            value="2"
+            id="testimonials-slider"
+            class="little-range"
+          />
+        </div>
+        <button class="pets-in-zoo-button">leave feedback</button>
+      </div>
+    </section>
+
+    <!-- Map section -->
+    <section class="map-wrapper">
+      <h2 class="map-title">Map</h2>
+      <div class="map-block-wrapper">
+        <div class="map-dot-wrapper">
+          <div class="map-dot-hawk">
+            <div class="map-tooltip-wrapper">
+              <img
+                class="tooltip-logo"
+                src="assets/hawk-logo.svg"
+                alt="tooltip-logo"
+              />
+              <div class="tooltip-text-wrapper">
+                <h4 class="tooltip-title">West End Bald Eagle</h4>
+                <p class="tooltip-descrption">
+                  <span class="tooltip-description-title">Region:</span>on an
+                  island near Los Angeles
                 </p>
+                <p class="tooltip-descrption">
+                  <span class="tooltip-description-title">Population:</span>more
+                  than 270 pairs in 2013
+                </p>
+              </div>
             </div>
-        </footer>
-    </body>
+          </div>
+        </div>
+        <div class="map-dot-crocodile"></div>
+        <div class="map-dot-gorilla"></div>
+        <div class="map-dot-panda"></div>
+      </div>
+      <form action="pages/zoos/panda.html" target="_blank">
+        <button class="online-button button-wrapper">
+          <img class="button-image" src="assets/play.svg" alt="play" />
+          <p class="button-text">watch online</p>
+        </button>
+      </form>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="footer">
+      <section class="footer-wrapper">
+        <nav class="footer-navigation-wrapper">
+          <a class="footer-logo" href="#">
+            <img id="logo" src="assets/logo-light.svg" alt="logo" />
+          </a>
+          <ul class="navigation-references-wrapper">
+            <li class="navigate">
+              <a class="footer-navigation about" href="#">About</a>
+            </li>
+            <li class="navigate">
+              <a class="footer-navigation zoos" href="pages/zoos/panda.html"
+                >Zoos</a
+              >
+            </li>
+            <li class="navigate">
+              <a class="footer-navigation map" href="pages/Intermediate.html"
+                >Map</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer-navigation design"
+                href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp?node-id=0%3A1"
+                >Design</a
+              >
+            </li>
+          </ul>
+          <button class="footer-button">donate for volunteers</button>
+        </nav>
+        <section class="feedback-wrapper">
+          <div class="footer-contact-wrapper">
+            <h3 class="contact-title"><a name="contact"></a>Contact us</h3>
+            <form class="form-wrapper">
+              <input
+                type="text"
+                required
+                placeholder="Name"
+                class="footer-contact-name"
+              /><input
+                type="email"
+                required
+                placeholder="Email"
+                class="footer-contact-email"
+              />
+              <fieldset class="textarea-wrapper">
+                <legend class="footer-contact-message-title">
+                  Please enter your message
+                </legend>
+                <textarea
+                  class="footer-contact-message"
+                  required
+                  maxlength="280"
+                >
+                </textarea>
+              </fieldset>
+              <p class="footer-contact-agree-wrapper">
+                <label class="footer-contact-agree"
+                  ><input
+                    type="checkbox"
+                    class="footer-contact-agree-input"
+                    required
+                  />
+                  I agree to the processing of Personal Data</label
+                >
+              </p>
+              <button class="footer-contact-button" type="submit">
+                <p class="footer-contact-button-text">send</p>
+                >
+                <img
+                  class="button-arrow-image"
+                  src="assets/button-arrow.svg"
+                  alt="button-arrow"
+                />
+              </button>
+            </form>
+          </div>
+          <div class="footer-information-wrapper">
+            <div class="footer-address-wrapper">
+              <h3 class="footer-address-title">ZOO Online Centre</h3>
+              <div>
+                <p class="zoo-address">132, Address District, Street</p>
+                <p class="zoo-work-time">Open Daily 10:00 am - 5:00 pm</p>
+              </div>
+              <address class="address-wrapper">
+                <a href="tel:7021633433" class="zoo-phone">T(702) 163-3433</a>
+                <a href="mailto:zoo.online@gmail.com" class="zoo-email"
+                  >zoo.online@gmail.com</a
+                >
+              </address>
+            </div>
+            <div class="footer-socials-wrapper">
+              <a
+                href="https://www.instagram.com/?hl=ru"
+                target="_blank"
+                class="social-link-instagram"
+              ></a
+              ><a
+                href="https://twitter.com/?lang=ru"
+                target="_blank"
+                class="social-link-twitter"
+              ></a
+              ><a
+                href="https://vk.com/"
+                target="_blank"
+                class="social-link-vk"
+              ></a
+              ><a
+                href="https://www.youtube.com/"
+                target="_blank"
+                class="social-link-youtube"
+              ></a>
+            </div>
+          </div>
+        </section>
+      </section>
+      <div class="footer-line"></div>
+      <div class="project-copiright-wrapper">
+        <p class="project-copiright-name">©Noora Sagnayeva</p>
+        <p class="project-copiright">©RSSchool and ©Yem Digital - 2021</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
