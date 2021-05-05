@@ -644,6 +644,7 @@ input:checked + .slider:before {
   width: 100%;
   padding-left: 311px;
   padding-right: 309px;
+  margin-bottom: 30px;
 }
 .testimonials-left-arrow {
   transform: rotate(-180deg);
@@ -1129,9 +1130,9 @@ input:checked + .slider:before {
   height: 59px;
   margin-bottom: 0px;
   margin-top: 20px;
+  margin-left: 321px;
 }
 .slider-output-wrapper {
-  margin-bottom: 11px;
   height: 28px;
   font-weight: 900;
   text-align: center;
