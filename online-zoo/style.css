@@ -1151,6 +1151,9 @@ input:checked + .slider:before {
 .slider-output.white-output {
   color: #fefefe;
 }
+.slider-output.black-output {
+  color: var(--black-color-second);
+}
 
 input[type="range"] {
   -webkit-appearance: none;

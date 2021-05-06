@@ -2,11 +2,14 @@ const inputCheckbox = document.querySelector('input[type="checkbox"]');
 const round = document.querySelector(".round");
 const map = document.querySelector(".map-block-wrapper");
 const logoLight = "assets/logo-light.svg";
+const arrowLight = "assets/right-arrow-light.png";
+const arrowDark = "assets/right-arrow.svg";
 const logoDark = "assets/logo-dark.svg";
 const maplight = "url('assets/map-light.png')";
 const mapDark = "url('assets/map-dark.svg')";
 const logo = document.getElementById("logo");
 const inputRange = document.querySelectorAll('input[type="range"]');
+const arrow = document.querySelectorAll(".arrow");
 let isPressed = false;
 
 const handleChangeColor = (event) => {
@@ -21,9 +24,15 @@ const handleChangeImage = (event) => {
   if (event.target.checked) {
     logo.setAttribute("src", logoLight);
     map.style.backgroundImage = maplight;
+    arrow.forEach((ar) => {
+      ar.setAttribute("src", arrowLight);
+    });
   } else {
     logo.setAttribute("src", logoDark);
     map.style.backgroundImage = mapDark;
+    arrow.forEach((ar) => {
+      ar.setAttribute("src", arrowDark);
+    });
   }
 };
 
@@ -34,7 +43,7 @@ const handleChangeOutputValue = (input) => {
 
 inputCheckbox.addEventListener("change", (event) => {
   handleChangeColor(event);
-  handlerChangeImage(event);
+  handleChangeImage(event);
 });
 
 const handleAddListener = (element) => {
@@ -55,4 +64,3 @@ const handleAddListener = (element) => {
 inputRange.forEach((item) => {
   handleAddListener(item);
 });
-
