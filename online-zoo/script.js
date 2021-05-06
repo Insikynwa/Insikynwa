@@ -1,50 +1,12 @@
-const inputCheckbox = document.querySelector('input[type="checkbox"]');
-const round = document.querySelector(".round");
-const map = document.querySelector(".map-block-wrapper");
-const logoLight = "assets/logo-light.svg";
-const arrowLight = "assets/right-arrow-light.png";
-const arrowDark = "assets/right-arrow.svg";
-const logoDark = "assets/logo-dark.svg";
-const maplight = "url('assets/map-light.png')";
-const mapDark = "url('assets/map-dark.svg')";
-const logo = document.getElementById("logo");
+// Common
 const inputRange = document.querySelectorAll('input[type="range"]');
-const arrow = document.querySelectorAll(".arrow");
 let isPressed = false;
 
-const handleChangeColor = (event) => {
-  if (event.target.checked) {
-    document.body.classList.add("dark-mode");
-  } else {
-    document.body.classList.remove("dark-mode");
-  }
-};
-
-const handleChangeImage = (event) => {
-  if (event.target.checked) {
-    logo.setAttribute("src", logoLight);
-    map.style.backgroundImage = maplight;
-    arrow.forEach((ar) => {
-      ar.setAttribute("src", arrowLight);
-    });
-  } else {
-    logo.setAttribute("src", logoDark);
-    map.style.backgroundImage = mapDark;
-    arrow.forEach((ar) => {
-      ar.setAttribute("src", arrowDark);
-    });
-  }
-};
-
-const handleChangeOutputValue = (input) => {
+const handleChangeOutputValue = (input, value) => {
   let output = document.getElementById(input.id);
-  output.value = "0" + input.value + "/";
+  input.value = value;
+  output.value = "0" + value + "/";
 };
-
-inputCheckbox.addEventListener("change", (event) => {
-  handleChangeColor(event);
-  handleChangeImage(event);
-});
 
 const handleAddListener = (element) => {
   element.addEventListener("mousedown", (event) => {
@@ -52,15 +14,50 @@ const handleAddListener = (element) => {
   });
 
   element.addEventListener("mouseup", (event) => {
-    handleChangeOutputValue(event.target);
+    handleChangeOutputValue(event.target, event.target.value);
     isPressed = false;
   });
   element.addEventListener("mousemove", (event) => {
     if (isPressed) {
-      handleChangeOutputValue(event.target);
+      handleChangeOutputValue(event.target, event.target.value);
     }
   });
 };
 inputRange.forEach((item) => {
   handleAddListener(item);
+});
+
+// Favourite animal slider
+
+const carousel = document.querySelector(
+  ".favourite-animal-slider-images-wrapper"
+);
+let width = carousel.offsetWidth;
+window.addEventListener("resize", (e) => (width = carousel.offsetWidth));
+
+//Pets in Zoo slider
+
+const prev = document.querySelector(".prev");
+const next = document.querySelector(".next");
+const petsInput = document.querySelector(".pets-slider");
+
+let slideIndex = 0;
+let carouselWidth = carousel.offsetWidth;
+
+next.addEventListener("click", () => {
+  slideIndex++;
+  handleChangeOutputValue(petsInput, slideIndex + 1);
+  if (slideIndex >= 8) {
+    handleChangeOutputValue(petsInput, 1);
+    slideIndex = 0;
+  }
+});
+
+prev.addEventListener("click", () => {
+  handleChangeOutputValue(petsInput, slideIndex);
+  slideIndex--;
+  if (slideIndex < 0) {
+    handleChangeOutputValue(petsInput, 8);
+    slideIndex = 7;
+  }
 });
