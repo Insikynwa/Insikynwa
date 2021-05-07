@@ -32,8 +32,8 @@ inputRange.forEach((item) => {
 const carousel = document.querySelector(
   ".favourite-animal-slider-images-wrapper"
 );
-let width = carousel.offsetWidth;
-window.addEventListener("resize", (e) => (width = carousel.offsetWidth));
+// let width = carousel.offsetWidth;
+// window.addEventListener("resize", (e) => (width = carousel.offsetWidth));
 
 //Pets in Zoo slider
 
