@@ -29,17 +29,12 @@ inputRange.forEach((item) => {
 
 // Favourite animal slider
 
-// let width = carousel.offsetWidth;
-// window.addEventListener("resize", (e) => (width = carousel.offsetWidth));
-
 //Pets in Zoo slider
-
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 const petsInput = document.querySelector(".pets-slider");
 const carousel = document.querySelector(".carousel");
 const content = document.querySelector(".content");
-const petsRange = document.querySelector(".pets-slider");
 
 let slideIndex = 0;
 let carouselWidth = carousel.offsetWidth;
@@ -64,8 +59,7 @@ prev.addEventListener("click", () => {
   carousel.scrollTo(carouselWidth * slideIndex, 0);
 });
 
-petsRange.addEventListener('input', (event) => {
+petsInput.addEventListener("input", (event) => {
   carousel.scrollTo(carouselWidth * (event.target.value - 1), 0);
   slideIndex = event.target.value - 1;
 });
-
