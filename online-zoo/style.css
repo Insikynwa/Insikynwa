@@ -452,17 +452,28 @@ input:checked + .slider:before {
 .pets-in-zoo-images-wrapper {
   display: flex;
   justify-content: space-between;
-  width: 100%;
   align-items: center;
-  margin: 35px 0 30px;
-  padding: 0 310px;
+  margin: 35px auto 30px;
 }
-
+.carousel {
+  scroll-behavior: smooth;
+  max-width: 62.5vw;
+  overflow: hidden;
+}
+.content {
+  display: flex;
+  width: 800%;
+}
 .pets-in-zoo-image {
   position: relative;
-  width: 278px;
-  height: 399px;
+  width: 14.2vw;
+  height: 21vw;
+  margin-right: 1.5vw;
   overflow: hidden;
+}
+
+.pets-in-zoo-image:last-child {
+  margin: 0;
 }
 .pets-in-zoo-image:hover {
   cursor: pointer;
@@ -520,6 +531,12 @@ input:checked + .slider:before {
 .pets-in-zoo-arrow {
   width: 30px;
   height: 30px;
+}
+.pets-in-zoo-arrow.prev {
+  margin-right: 20px;
+}
+.pets-in-zoo-arrow.next {
+  margin-left: 20px;
 }
 .pets-in-zoo-arrow:hover {
   cursor: pointer;

@@ -29,9 +29,6 @@ inputRange.forEach((item) => {
 
 // Favourite animal slider
 
-const carousel = document.querySelector(
-  ".favourite-animal-slider-images-wrapper"
-);
 // let width = carousel.offsetWidth;
 // window.addEventListener("resize", (e) => (width = carousel.offsetWidth));
 
@@ -40,6 +37,9 @@ const carousel = document.querySelector(
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 const petsInput = document.querySelector(".pets-slider");
+const carousel = document.querySelector(".carousel");
+const content = document.querySelector(".content");
+const petsRange = document.querySelector(".pets-slider");
 
 let slideIndex = 0;
 let carouselWidth = carousel.offsetWidth;
@@ -51,6 +51,7 @@ next.addEventListener("click", () => {
     handleChangeOutputValue(petsInput, 1);
     slideIndex = 0;
   }
+  carousel.scrollTo(carouselWidth * slideIndex, 0);
 });
 
 prev.addEventListener("click", () => {
@@ -60,4 +61,11 @@ prev.addEventListener("click", () => {
     handleChangeOutputValue(petsInput, 8);
     slideIndex = 7;
   }
+  carousel.scrollTo(carouselWidth * slideIndex, 0);
 });
+
+petsRange.addEventListener('input', (event) => {
+  carousel.scrollTo(carouselWidth * (event.target.value - 1), 0);
+  slideIndex = event.target.value - 1;
+});
+
