@@ -276,7 +276,7 @@ input:checked + .slider:before {
   border-radius: 5px;
 }
 .preview-video:hover {
-cursor: pointer;
+  cursor: pointer;
 }
 .preview-player {
   width: 12.813vw;
@@ -290,35 +290,7 @@ cursor: pointer;
   width: 12.813vw;
   height: 100%;
 }
-/* .preview-slider {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.slider-dot{
-    position: relative;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-    padding: 0;
-    color: blue;
-    cursor: pointer;
-}
-.slick-button{
-    font-size: 0;
-    line-height: 0;
-    display: block;
-    width: 20px;
-    height: 20px;
-    padding: 5px;
-    cursor: pointer;
-    color: transparent;
-    border: 0;
-    outline: none;
-    background: transparent;
-} */
+
 .slider-dots {
   cursor: pointer;
   display: block;
